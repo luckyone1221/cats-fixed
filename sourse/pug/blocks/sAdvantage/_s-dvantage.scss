@@ -1,0 +1,714 @@
+
+	// start .s-test
+	.s-advantage {
+	@include media-breakpoint-up(base-xl) {
+		padding-top: 200px;
+		text-align: center;
+		font-family: $default-font;
+		.small-cat-and-dog{
+			margin-right: -32px;
+			width: auto;
+		}
+		.advantage-title{
+			color: $home-advantage-headline-color;
+			font-size: $h-font-size;
+			line-height: 1;
+			padding: 10px 0 0 40px;
+			margin: 0;
+			font-weight: 900;
+		}
+		.advantages-pills-list{
+			display: block;
+			list-style: none;
+			padding-top: 129px;
+			margin-right: 0;
+			margin-left: 0;
+			font-size: 0;
+			.advantages-pills-list-item{
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+				.inner-img-container{
+					display: block;
+					width: 330px;
+					height: 330px;
+					margin: 0 auto;
+					border-radius: 50%;
+					.inner-img{
+						width: auto;
+						height: auto;
+					}
+				}
+				.pill-description{
+					line-height: 1.448;
+					text-align: center;
+					padding: 0;
+					color: $h-color; //#4a4b4c;
+					font-size: $em-base;
+					font-weight: 900;
+					margin-top: 25px;
+					position: relative;
+				}
+				//pill pixel perfect
+				&:nth-child(1){
+					.inner-img-container{
+						margin-left: 11.5%;
+						.inner-img{
+							margin: 17% 0 0 2.5%;
+						}
+					}
+					.pill-description{
+						left: -45px;
+					}
+				}
+				&:nth-child(2){
+					.inner-img-container{
+						margin-left: 18%;
+						.inner-img{
+							margin: 24% 0 0 1.2%;
+						}
+					}
+					.pill-description{
+						left: -15px;
+					}
+				}
+				&:nth-child(3){
+					.inner-img-container{
+						margin-left: 25%;
+						.inner-img{
+							margin: 19% 0 0 10%;
+						}
+					}
+					.pill-description{
+						left: 21px;
+					}
+				}
+				&:nth-child(4){
+					.inner-img-container{
+						margin-left: 29%;
+						.inner-img{
+							margin: 17% 0 0 2%;
+						}
+					}
+					.pill-description{
+						left: 45px;
+					}
+				}
+			}
+		}
+		.convince-txt-container{
+			display: block;
+			position: relative;
+			width: 1900px;
+			max-width: 82%;
+			background-color: $convince-bg-color;
+			padding-left: 155px;
+			margin: 275px 0 0 145px;
+			text-align: left;
+			.convince-txt-head-line{
+				font-size: 58.5px;
+				font-weight: 900;
+				padding-top: 115px;
+				line-height: 1.25;
+				color: $h-color;
+			}
+			.convince-txt-par{
+				margin: 0;
+				color: $h-color;
+				padding: 7px 0 140px 0;
+				font-weight: 500;
+				font-size: $em-base;
+				width: 52%;
+				line-height: 58.5px;
+			}
+			.convince-img{
+				position: absolute;
+				right: -95px;
+				top: -95px;
+				width: 770px;
+				height: 770px;
+				background-size: cover;
+			}
+		}
+	}
+	@include media-breakpoint-only(base-lg) {
+		$em-base: 26px;
+		$h-font-size: 1.62 * $em-base;
+		padding-top: 200px;
+		text-align: center;
+		font-family: $default-font;
+		.small-cat-and-dog{
+			margin-right: -32px;
+		}
+		.advantage-title{
+			color: $home-advantage-headline-color;
+			font-size: $h-font-size;//44
+			line-height: 1;
+			padding: 16px 0 0 40px;
+			margin: 0px 0px 0px 0px;
+			font-weight: 900;
+		}
+		.advantages-pills-list{
+			display: block;
+			list-style: none;
+			padding-top: 129px;
+			margin-right: 0;
+			margin-left: 0;
+			font-size: 0px;
+			.advantages-pills-list-item{
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+				.inner-img-container{
+					width: 190px;
+					height: 190px;
+					display: flex;
+					margin: 0 auto;
+					border-radius: 50%;
+					.inner-img{
+						width: 50%;
+						margin: auto;
+						line-height: 190px;
+					}
+				}
+				.pill-description{
+					line-height: 1.448;
+					text-align: center;
+					padding: 0;
+					color: $h-color; //#4a4b4c;
+					font-size: $em-base;
+					font-weight: 900;
+					margin-top: 25px;
+					position: relative;
+				}
+			}
+		}
+		.convince-txt-container{
+			display: block;
+			position: relative;
+			width: 1850px;
+			max-width: 82%;
+			background-color: $convince-bg-color;
+			padding-left: 90px;
+			margin: 200px 0 0 70px;
+			text-align: left;
+			.convince-txt-head-line{
+				font-size: 35px;
+				font-weight: 900;
+				padding-top: 70px;
+				line-height: 1.25;
+			}
+			.convince-txt-par{
+				margin: 0;
+				color: $h-color;
+				padding: 10px 0 80px 0;
+				font-weight: 500;
+				font-size: $em-base * 0.75; //20px
+				width: 48%;
+				line-height: 35px;
+			}
+			.convince-img{
+				position: absolute;
+				right: -5%;
+				top: -20%;
+				width: 500px;
+				height: 500px;
+				background-size: cover;
+			}
+		}
+	}
+
+	//
+	@include media-breakpoint-up(xl) {
+		$em-base: 20px;
+		$h-font-size: 1.62 * $em-base;
+		padding-top: 200px;
+		text-align: center;
+		font-family: $default-font;
+		.small-cat-and-dog{
+			width: 100px;
+			height: auto;
+		}
+		.advantage-title{
+			color: $home-advantage-headline-color;
+			font-size: $h-font-size; //34px;
+			line-height: 1;
+			padding: 20px 0 0 0px;
+			margin: 0px 0px 0px 0px;
+			font-weight: 900;
+		}
+		.advantages-pills-list{
+			display: block;
+			list-style: none;
+			padding-top: 80px;
+			margin-right: 0;
+			margin-left: 0;
+			font-size: 0px;
+			.advantages-pills-list-item{
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+				.inner-img-container{
+					width: 190px;
+					height: 190px;
+					display: flex;
+					margin: 0 auto;
+					border-radius: 50%;
+					.inner-img{
+						width: 50%;
+						//height: 50%;
+						margin: auto;
+						line-height: 190px;
+					}
+				}
+				.pill-description{
+					line-height: 1.448;
+					text-align: center;
+					padding: 0;
+					color: $h-color;
+					font-size: $em-base * 0.8;
+					font-weight: 900;
+					margin-top: 25px;
+					position: relative;
+				}
+			}
+		}
+		.convince-txt-container{
+			display: block;
+			position: relative;
+			width: 1850px;
+			max-width: 82%;
+			background-color: $convince-bg-color;
+			padding-left: 72px;
+			margin: 100px 0 0 100px;
+			text-align: left;
+			.convince-txt-head-line{
+				font-size: 28px;
+				font-weight: 900;
+				padding-top: 56px;
+				line-height: 1.25;
+				color: $h-color;
+			}
+			.convince-txt-par{
+				margin: 0;
+				color: $h-color;
+				padding: 10px 0 40px 0;
+				font-weight: 500;
+				font-size: 16px;
+				width: 55%;
+				line-height: 35px;
+			}
+			.convince-img{
+				position: absolute;
+				right: -40px;
+				top: -40px;
+				width: 400px;
+				height: 400px;
+				background-size: cover;
+			}
+		}
+	}
+
+	@include media-breakpoint-up(lg) {
+		$em-base: 17px;
+		$h-font-size: 1.62 * $em-base;
+		padding-top: 100px;
+		text-align: center;
+		font-family: $default-font;
+		.small-cat-and-dog{
+			width: 100px;
+			height: auto;
+		}
+		.advantage-title{
+			color: $home-advantage-headline-color;
+			font-size: $h-font-size; //28
+			line-height: 1;
+			padding: 20px 0 0 0px;
+			margin: 0px 0px 0px 0px;
+			font-weight: 900;
+		}
+		.advantages-pills-list{
+			display: block;
+			list-style: none;
+			padding-top: 60px;
+			margin-right: 0;
+			margin-left: 0;
+			font-size: 0px;
+			.advantages-pills-list-item{
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+				.inner-img-container{
+					width: 150px;
+					height: 150px;
+					display: flex;
+					margin: 0 auto;
+					border-radius: 50%;
+					.inner-img{
+						width: 50%;
+						//height: 50%;
+						margin: auto;
+						line-height: 150px;
+					}
+				}
+				.pill-description{
+					line-height: 1.448;
+					text-align: center;
+					padding: 0;
+					color: $h-color; //#4a4b4c;
+					font-size: $em-base; //15
+					font-weight: 900;
+					margin-top: 25px;
+					position: relative;
+				}
+			}
+		}
+		.convince-txt-container{
+			display: block;
+			position: relative;
+			max-width: 82%;
+			background-color: $convince-bg-color;
+			padding-left: 45px;
+			margin: 100px 0 0 80px;
+			text-align: left;
+			.convince-txt-head-line{
+				font-size: 22px;
+				font-weight: 900;
+				padding-top: 45px;
+				line-height: 1.25;
+				color: $h-color;
+			}
+			.convince-txt-par{
+				margin: 0;
+				color: $h-color;
+				padding: 10px 0 35px 0;
+				font-weight: 500;
+				font-size: 14px;
+				width: 55%;
+				line-height: 30px;
+			}
+			.convince-img{
+				position: absolute;
+				right: -34px;
+				top: -34px;
+				width: 340px;
+				height: 340px;
+				background-size: cover;
+			}
+		}
+	}
+	@include media-breakpoint-up(md) {
+		$em-base: 16px;
+		$h-font-size: 1.62 * $em-base;
+		padding-top: 80px;
+		text-align: center;
+		font-family: $default-font;
+		.small-cat-and-dog{
+			width: 85px;
+			height: auto;
+		}
+		.advantage-title{
+			color: $home-advantage-headline-color;
+			font-size: $h-font-size; // 25
+			line-height: 1;
+			padding: 15px 0 0 0px;
+			margin: 0px 0px 0px 0px;
+			font-weight: 900;
+		}
+		.advantages-pills-list{
+			display: block;
+			list-style: none;
+			padding-top: 45px;
+			margin-right: 0;
+			margin-left: 0;
+			font-size: 0px;
+			.advantages-pills-list-item{
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+				padding: 0;
+				.inner-img-container{
+					width: 120px;
+					height: 120px;
+					display: flex;
+					margin: 0 auto;
+					border-radius: 50%;
+					.inner-img{
+						width: 50%;
+						//height: 50%;
+						margin: auto;
+						line-height: 120px;
+					}
+				}
+				.pill-description{
+					line-height: 1.448;
+					text-align: center;
+					padding: 0;
+					color: $h-color; //#4a4b4c;
+					font-size: $em-base;
+					font-weight: 900;
+					margin-top: 25px;
+					position: relative;
+				}
+			}
+		}
+		.convince-txt-container{
+			display: block;
+			position: relative;
+			//max-width: 100%;
+			background-color: $convince-bg-color;
+			padding-left: 30px;
+			margin: 80px 0 0 0;
+			text-align: left;
+			&:after{
+				content: '';
+				position: absolute;
+				right: 0;
+				top: 0;
+				background-color: white;
+				width: 34px;
+				height: 100%;
+			}
+			.convince-txt-head-line{
+				font-size: 22px;
+				font-weight: 900;
+				padding-top: 30px;
+				line-height: 1.25;
+			}
+			.convince-txt-par{
+				margin: 0;
+				color: $h-color;
+				padding: 5px 0 35px 0;
+				font-weight: 500;
+				font-size: 13.5px;
+				width: 55%;
+				line-height: 24px;
+			}
+			.convince-img{
+				position: absolute;
+				z-index: 2;
+				right: 0px;
+				top: -34px;
+				width: 280px;
+				height: 280px;
+				background-size: cover;
+			}
+		}
+	}
+	@include media-breakpoint-up(sm) {
+		$em-base: 16px;
+		$h-font-size: 1.62 * $em-base;
+		padding-top: 80px;
+		text-align: center;
+		font-family: $default-font;
+		.small-cat-and-dog{
+			width: 85px;
+			height: auto;
+		}
+		.advantage-title{
+			color: $home-advantage-headline-color;
+			font-size: $h-font-size; //25
+			line-height: 1;
+			padding: 15px 0 0 0px;
+			margin: 0px 0px 0px 0px;
+			font-weight: 900;
+		}
+		.advantages-pills-list{
+			display: block;
+			list-style: none;
+			padding-top: 45px;
+			margin-right: 0;
+			margin-left: 0;
+			font-size: 0px;
+			.advantages-pills-list-item{
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+				padding: 0;
+				.inner-img-container{
+					width: 120px;
+					height: 120px;
+					display: flex;
+					margin: 0 auto;
+					border-radius: 50%;
+					.inner-img{
+						width: 50%;
+						//height: 50%;
+						margin: auto;
+						line-height: 120px;
+					}
+				}
+				.pill-description{
+					line-height: 1.448;
+					text-align: center;
+					padding: 0;
+					color: $h-color; //#4a4b4c;
+					font-size: $em-base; //11
+					font-weight: 900;
+					margin-top: 25px;
+					position: relative;
+				}
+			}
+		}
+		.convince-txt-container{
+			display: block;
+			position: relative;
+			//max-width: 100%;
+			background-color: $convince-bg-color;
+			padding-left: 30px;
+			margin: 80px 0 0 0;
+			text-align: left;
+			&:after{
+				content: '';
+				position: absolute;
+				right: 0;
+				top: 0;
+				background-color: white;
+				width: 34px;
+				height: 100%;
+			}
+			.convince-txt-head-line{
+				font-size: 22px;
+				font-weight: 900;
+				padding-top: 30px;
+				line-height: 1.25;
+				color: $h-color;
+			}
+			.convince-txt-par{
+				margin: 0;
+				color: $h-color;
+				padding: 5px 40px 0 0;
+				font-weight: 500;
+				font-size: 13.5px;
+				width: 100%;
+				line-height: 24px;
+			}
+			.convince-img{
+				position: relative;
+				z-index: 2;
+				margin-left: auto;
+				bottom: -34px;
+				width: 280px;
+				height: 280px;
+				background-size: cover;
+			}
+		}
+	}
+
+	@include media-breakpoint-only(xs) {
+		$em-base: 14px;
+		$h-font-size: 1.62 * $em-base;
+		padding-top: 80px;
+		text-align: center;
+		font-family: $default-font;
+		.small-cat-and-dog{
+			width: 85px;
+			height: auto;
+		}
+		.advantage-title{
+			color: $home-advantage-headline-color;
+			font-size: $h-font-size; //20
+			line-height: 1;
+			padding: 15px 0 0 0px;
+			margin: 0px 0px 0px 0px;
+			font-weight: 900;
+		}
+		.advantages-pills-list{
+			display: block;
+			list-style: none;
+			padding-top: 45px;
+			margin-right: 0;
+			margin-left: 0;
+			font-size: 0px;
+			.advantages-pills-list-item{
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+				padding: 0;
+				.inner-img-container{
+					width: 120px;
+					height: 120px;
+					display: flex;
+					margin: 0 auto;
+					border-radius: 50%;
+					.inner-img{
+						width: 50%;
+						//height: 50%;
+						margin: auto;
+						line-height: 120px;
+					}
+				}
+				.pill-description{
+					line-height: 1.448;
+					text-align: center;
+					padding: 0;
+					color: $h-color; //#4a4b4c;
+					font-size: $em-base; //11
+					font-weight: 900;
+					margin-top: 25px;
+					position: relative;
+				}
+			}
+		}
+		.convince-txt-container{
+			display: block;
+			position: relative;
+			background-color: $convince-bg-color;
+			margin-top: 80px;
+			text-align: left;
+			margin-right: -15px;
+			margin-left: -15px;
+			.convince-txt-head-line{
+				font-size: 22px;
+				font-weight: 900;
+				padding-top: 20px;
+				padding-left: 20px;
+				line-height: 1.25;
+				color: $h-color;
+			}
+			.convince-txt-par{
+				margin: 0;
+				color: $h-color;
+				padding: 5px 20px 20px 20px;
+				font-weight: 500;
+				font-size: 13.5px;
+				width: 100%;
+				line-height: 24px;
+			}
+			.convince-img{
+				position: relative;
+				margin-left: auto;
+				bottom: 0;
+				width: 100vw;
+				height: 100vw;
+				max-width: 480px;
+				max-height: 480px;
+				background-size: cover;
+			}
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-up(xs) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+
+
+	//
+	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+	@include media-breakpoint-down(xs) {} 
+
+} // end.s-test

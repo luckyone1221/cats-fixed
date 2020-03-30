@@ -1,0 +1,397 @@
+
+	// start .sContact
+	.s-perfect-formula {
+		font-family: $default-font;
+		.s-headline{
+			font-weight: 900;
+			color: $h-color;
+			line-height: 1;
+			letter-spacing: 1.2px;
+			word-spacing: 0.8px;
+			text-align: center;
+		}
+		.class-headline-description{
+			font-weight: 400;
+			color: $h-color;
+			text-align: center;
+		}
+		.component-pills{
+			.component-pill-item{
+				text-align: center;
+				.img-container{
+					background-color: $component-img-cont-color;
+					border-radius: 50%;
+					position: static;
+					margin: auto;
+				}
+				.component-descr{
+					font-weight: 900;
+					color: $h-color;
+
+					padding: 0;
+					position: static;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+		}
+	@include media-breakpoint-up(base-xl) {
+		margin-top: 145px;
+		font-family: $default-font;
+		.s-headline{
+			font-size: 54.5px;
+			font-weight: 900;
+			color: $h-color;
+			line-height: 1;
+			padding-right: 78px;
+			letter-spacing: 1.2px;
+			word-spacing: 0.8px;
+		}
+		.class-headline-description{
+			font-size: 30.5px;
+			font-weight: 400;
+			color: $h-color;
+			line-height: 50px;
+			margin-top: 35px;
+		}
+		.component-pills{
+			//height: 200px;
+			//background-color: red;
+			margin-top: 200px;
+			.component-pill-item{
+				text-align: center;
+				.img-container{
+					width: 345px;
+					height: 345px;
+					background-color: $component-img-cont-color;
+					border-radius: 50%;
+				}
+				.component-descr{
+					font-size: 41.5px;
+					font-weight: 900;
+					color: $h-color;
+					line-height: 50px;
+					margin-top: 55px;
+				}
+				//pixel perfect
+				&:nth-child(1){
+					.img-container{
+						position: relative;
+						//background-color: red;
+						margin: -15px 0px 0 26px;
+					}
+					.component-descr{
+						margin-top: 45px;
+						padding-right: 30px;
+					}
+				}
+				&:nth-child(2){
+					.img-container{
+						position: relative;
+						//background-color: red;
+						margin: -15px 0px 0 26px;
+					}
+					.component-descr{
+						margin-top: 50px;
+						padding-right: 30px;
+					}
+				}
+				&:nth-child(3){
+					.img-container{
+						position: relative;
+						//background-color: red;
+						margin: -15px 0px 0 26px;
+						.component-img{
+							position: relative;
+							//margin: 0px 0 40px 0;
+							top: 20px;
+						}
+					}
+					.component-descr{
+						margin-top: 55px;
+						padding-right: 35px;
+					}
+				}
+				&:nth-child(4){
+					.img-container{
+						position: relative;
+						//background-color: red;
+						margin: -15px 0px 0 26px;
+						.component-img{
+							position: relative;
+							top: 10px;
+							left: -25px;
+						}
+					}
+					.component-descr{
+						margin-top: 55px;
+						//padding-right: 0px;
+						position: relative;
+						left: -40px;
+					}
+				}
+				&:nth-child(5){
+					.img-container{
+						position: relative;
+						//background-color: red;
+						margin: -15px 0px 0 26px;
+						.component-img{
+							position: relative;
+							//margin: 0px 0 40px 0;
+							top: 20px;
+							left: -15px;
+						}
+					}
+					.component-descr{
+						width: 90%;
+						margin-top: 55px;
+						left: -15px;
+						position: relative;
+					}
+				}
+			}
+		}
+	}
+		@include media-breakpoint-up(base-lg) {
+			margin-top: 100px;
+			.s-headline{
+				font-size: 42.5px;
+				padding-right: 0;
+			}
+			.class-headline-description{
+				font-size: 24.5px;
+				line-height: 50px;
+				margin-top: 35px;
+			}
+			.component-pills{
+				margin-top: 200px;
+				.component-pill-item{
+					.img-container{
+						width: 200px;
+						height: 200px;
+						position: static;
+						margin: auto;
+						.component-img{
+							width: 100%;
+						}
+					}
+					.component-descr{
+						font-size: 25.5px;
+						line-height: 50px;
+						margin-top: 55px;
+					}
+				}
+			}
+		}
+		@include media-breakpoint-up(xl) {
+			margin-top: 50px;
+			.s-headline{
+				font-size: 32.5px;
+				padding-right: 0;
+			}
+			.class-headline-description{
+				font-size: 20px;
+				line-height: 1.5;
+				margin-top: 1em;
+			}
+			.component-pills{
+				margin-top: 75px;
+				.component-pill-item{
+					.img-container{
+						width: 180px;
+						height: 180px;
+						position: static;
+						margin: auto;
+						.component-img{
+							width: 100%;
+						}
+					}
+					.component-descr{
+						font-size: 18px;
+						line-height: 1.5;
+						margin-top: 25px;
+					}
+				}
+			}
+		}
+		@include media-breakpoint-up(lg) {
+			margin-top: 50px;
+			.s-headline{
+				font-size: 27.5px;
+				padding-right: 0px;
+			}
+			.class-headline-description{
+				font-size: 17px;
+				line-height: 1.5;
+				margin-top: 1em;
+			}
+			.component-pills{
+				margin-top: 50px;
+				.component-pill-item{
+					.img-container{
+						width: 140px;
+						height: 140px;
+						position: static;
+						margin: auto;
+						.component-img{
+							width: 100%;
+						}
+					}
+					.component-descr{
+						font-size: 16px;
+						line-height: 1.5;
+						margin-top: 25px;
+					}
+				}
+			}
+		}
+		@include media-breakpoint-up(md) {
+			margin-top: 50px;
+			.s-headline{
+				font-size: 27.5px;
+				padding-right: 0px;
+			}
+			.class-headline-description{
+				font-size: 16px;
+				line-height: 1.5;
+				margin-top: 1em;
+			}
+			.component-pills{
+				margin-top: 50px;
+				text-align: center;
+				.component-pill-item{
+					display: inline-block;
+					vertical-align: top;
+					width: 33.3%;
+					&:nth-child(4){
+						margin-left: auto;
+					}
+					&:nth-child(5){
+						margin-right: auto;
+					}
+					.img-container{
+						width: 140px;
+						height: 140px;
+						position: static;
+						margin: auto;
+						.component-img{
+							width: 100%;
+						}
+					}
+					.component-descr{
+						font-size: 16px;
+						line-height: 1.5;
+						margin-top: 25px;
+					}
+				}
+			}
+		}
+		@include media-breakpoint-up(sm) {
+			margin-top: 50px;
+			.s-headline{
+				font-size: 24px;
+				padding-right: 0px;
+			}
+			.class-headline-description{
+				font-size: 14px;
+				line-height: 1.5;
+				margin-top: 1em;
+			}
+			.component-pills{
+				margin-top: 50px;
+				text-align: center;
+				.component-pill-item{
+					display: inline-block;
+					vertical-align: top;
+					width: 33.3%;
+					&:nth-child(4){
+						margin-left: auto;
+					}
+					&:nth-child(5){
+						margin-right: auto;
+					}
+					.img-container{
+						width: 140px;
+						height: 140px;
+						position: static;
+						margin: auto;
+						.component-img{
+							width: 100%;
+						}
+					}
+					.component-descr{
+						font-size: 16px;
+						line-height: 1.5;
+						margin-top: 25px;
+					}
+				}
+			}
+		}
+		@include media-breakpoint-only(xs) {
+			margin-top: 0px;
+			.s-headline{
+				font-size: 22px;
+				padding-right: 0px;
+				text-align: left;
+			}
+			.class-headline-description{
+				text-align: left;
+				font-size: 14px;
+				line-height: 1.5;
+				margin-top: 1em;
+			}
+			.component-pills{
+				margin-top: 50px;
+				text-align: center;
+				.component-pill-item{
+					display: inline-block;
+					vertical-align: top;
+					width: 50%;
+					&:nth-child(4){
+						margin-left: auto;
+					}
+					&:nth-child(5){
+						margin-right: auto;
+						margin-left: auto;
+					}
+					.img-container{
+						width: 130px;
+						height: 130px;
+						position: static;
+						margin: auto;
+						.component-img{
+							width: 100%;
+						}
+					}
+					.component-descr{
+						font-size: 13.5px;
+						line-height: 1.5;
+						margin-top: 10px;
+					}
+				}
+			}
+		}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-up(xs) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+	@include media-breakpoint-down(xs) {} 
+
+} // end.sContact

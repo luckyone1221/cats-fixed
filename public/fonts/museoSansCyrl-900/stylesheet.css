@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Museo Sans Cyrl 900';
+    src: url('MuseoSansCyrl-900.woff2') format('woff2'),
+        url('MuseoSansCyrl-900.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+

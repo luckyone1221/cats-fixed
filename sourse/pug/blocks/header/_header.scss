@@ -1,0 +1,815 @@
+
+// start .header
+
+.header {
+	@include media-breakpoint-up(base-xl) {
+		padding: 0;
+		background-color: $home-header-bg-color;
+		min-height: 1565px;
+		box-sizing: border-box;
+		font-family: $default-font, Sans-serif;
+		color: $home-header-color;
+		.container {
+			position: relative;
+			header.home-header {
+				.logo-link {
+					position: absolute;
+					display: block;
+					left: -160px;
+					top: 61px;
+					max-width: 500px;
+				}
+				nav.header-menu{
+					display: block;
+					text-align: right;
+					font-size: 0px;
+					position: relative;
+					& > ul {
+						position: absolute;
+						top: 0;
+						right: -105px;
+						list-style: none;
+						display: inline-block;
+						vertical-align: top;
+						margin: 0;
+						& > li {
+							display: inline-block;
+							vertical-align: top;
+							cursor: pointer;
+							& > a{
+								display: inline-block;
+								vertical-align: top;
+								font-size: 39px;
+								line-height: 200px;
+								padding: 0 95px;
+								//font-family: $default-font ,sans-serif;
+								font-weight: 700;
+								text-decoration: none;
+								color: $home-header-color;
+								transition: background-color .25s ease-in-out, color .25s ease-in-out;
+								&:hover{
+									background-color: white;
+									color: $home-header-bg-color;
+								}
+							}
+							&:first-child {
+								& > a {
+									padding: 0 70px 0 70px;
+								}
+							}
+						}
+					}
+				}
+			}
+			.header-title{
+				position: absolute;
+				left: -45px;
+				top: 366px;
+				.header-title-img{
+					max-width: 555px;
+					height: auto;
+				}
+				.header-title-headline{
+					margin-top: 55px;
+					font-weight: 700;
+					font-size: 109px;
+					line-height: 1.135;
+				}
+				.header-title-txt{
+					margin-top: 45px;
+					font-weight: 500;
+					font-size: 33.5px;
+					line-height: 2.25;
+				}
+			}
+			.header-img-banner{
+				height: 1360px;
+				width: 1360px;
+				background-size: cover;
+				position: absolute;
+				right: -210px;
+				top: 305px;
+				.img-quality-mark{
+					position: absolute;
+					background-size: cover;
+					background-repeat: no-repeat;
+					left: -210px;
+					top: 113px;
+					height: 300px;
+					width: 340px;
+				}
+			}
+		}
+	}
+	@include media-breakpoint-up(base-lg) {
+		padding: 0;
+		background-color: $home-header-bg-color;
+		min-height: 939px;
+		box-sizing: border-box;
+		font-family: $default-font, Sans-serif;
+		color: $home-header-color;
+		.container {
+			position: relative;
+			header.home-header {
+				.logo-link {
+					position: absolute;
+					display: block;
+					left: -95px;
+					top: 36px;
+					max-width: 300px;
+					img{
+						width: 100%;
+					}
+				}
+				nav.header-menu{
+					display: block;
+					text-align: right;
+					font-size: 0px;
+					position: relative;
+					& > ul {
+						position: absolute;
+						top: 0;
+						right: 0px;
+						list-style: none;
+						display: inline-block;
+						vertical-align: top;
+						margin: 0;
+						& > li {
+							display: inline-block;
+							vertical-align: top;
+							cursor: pointer;
+							& > a{
+								display: inline-block;
+								vertical-align: top;
+								font-size: 25px;
+								line-height: 120px;
+								padding: 0 25px;
+								//font-family: $default-font ,sans-serif;
+								font-weight: 700;
+								text-decoration: none;
+								color: $home-header-color;
+								transition: background-color .25s ease-in-out, color .25s ease-in-out;
+								&:hover{
+									background-color: white;
+									color: $home-header-bg-color;
+								}
+							}
+						}
+					}
+				}
+			}
+			.header-title{
+				position: absolute;
+				left: -27px;
+				top: 250px;
+				.header-title-img{
+					max-width: 380px;
+					height: auto;
+				}
+				.header-title-headline{
+					margin-top: 33px;
+					font-weight: 700;
+					font-size: 65px;
+					line-height: 1.25;
+				}
+				.header-title-txt{
+					margin-top: 27px;
+					font-weight: 500;
+					font-size: 20px;
+					line-height: 2.25;
+				}
+			}
+			.header-img-banner{
+				height: 860px;
+				width: 860px;
+				background-size: cover;
+				position: absolute;
+				right: -50px;
+				top: 183px;
+				.img-quality-mark{
+					position: absolute;
+					background-size: 100%;
+					background-repeat: no-repeat;
+					left: -126px;
+					top: 68px;
+					height: 180px;
+					width: 204px;
+				}
+			}
+		}
+	}
+	@include media-breakpoint-up(xxl) {
+		padding: 0;
+		background-color: $home-header-bg-color;
+		min-height: 750px;
+		box-sizing: border-box;
+		font-family: $default-font, Sans-serif;
+		color: $home-header-color;
+		.container {
+			position: relative;
+			header.home-header {
+				.logo-link {
+					position: absolute;
+					display: block;
+					left: -75px;
+					top: 29px;
+					max-width: 300px;
+					img{
+						width: 100%;
+					}
+				}
+				nav.header-menu{
+					display: block;
+					text-align: right;
+					font-size: 0px;
+					position: relative;
+					& > ul {
+						position: absolute;
+						top: 0;
+						right: 0;
+						list-style: none;
+						display: inline-block;
+						vertical-align: top;
+						margin: 0;
+						& > li {
+							display: inline-block;
+							vertical-align: top;
+							cursor: pointer;
+							& > a{
+								display: inline-block;
+								vertical-align: top;
+								font-size: 20px;
+								line-height: 96px;
+								padding: 0 20px;
+								font-weight: 700;
+								text-decoration: none;
+								color: $home-header-color;
+								transition: background-color .25s ease-in-out, color .25s ease-in-out;
+								&:hover{
+									background-color: white;
+									color: $home-header-bg-color;
+								}
+							}
+						}
+					}
+				}
+			}
+			.header-title{
+				position: absolute;
+				left: -21.5px;
+				top: 200px;
+				.header-title-img{
+					max-width: 300px;
+					height: auto;
+				}
+				.header-title-headline{
+					margin-top: 30px;
+					font-weight: 700;
+					font-size: 52px;
+					line-height: 1.2;
+				}
+				.header-title-txt{
+					margin-top: 20px;
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 2.25;
+				}
+			}
+			.header-img-banner{
+				height: 688px;
+				width: 688px;
+				background-size: cover;
+				position: absolute;
+				right: -40px;
+				top: 147px;
+				.img-quality-mark{
+					position: absolute;
+					background-size: 100%;
+					background-repeat: no-repeat;
+					left: -100px;
+					top: 55px;
+					height: 144px;
+					width: 163px;
+				}
+			}
+		}
+	}
+	@include media-breakpoint-up(xl) {
+		padding: 0;
+		background-color: $home-header-bg-color;
+		min-height: 750px;
+		box-sizing: border-box;
+		font-family: $default-font, Sans-serif;
+		color: $home-header-color;
+		.container {
+			position: relative;
+			header.home-header {
+				.logo-link {
+					position: absolute;
+					display: block;
+					left: 0px;
+					top: 29px;
+					max-width: 220px;
+					img{
+						width: 100%;
+					}
+				}
+				nav.header-menu{
+					display: block;
+					text-align: right;
+					font-size: 0px;
+					position: relative;
+					& > ul {
+						position: absolute;
+						top: 0;
+						right: 70px;
+						list-style: none;
+						display: inline-block;
+						vertical-align: top;
+						margin: 0;
+						& > li {
+							display: inline-block;
+							vertical-align: top;
+							cursor: pointer;
+							& > a{
+								display: inline-block;
+								vertical-align: top;
+								font-size: 18px;
+								line-height: 96px;
+								padding: 0 18px;
+								font-weight: 700;
+								text-decoration: none;
+								color: $home-header-color;
+								transition: background-color .25s ease-in-out, color .25s ease-in-out;
+								&:hover{
+									background-color: white;
+									color: $home-header-bg-color;
+								}
+							}
+						}
+					}
+				}
+			}
+			.header-title{
+				position: absolute;
+				left: 0;
+				top: 200px;
+				.header-title-img{
+					max-width: 300px;
+					height: auto;
+				}
+				.header-title-headline{
+					margin-top: 30px;
+					font-weight: 700;
+					font-size: 52px;
+					line-height: 1.2;
+				}
+				.header-title-txt{
+					margin-top: 20px;
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 2.25;
+				}
+			}
+			.header-img-banner{
+				height: 688px;
+				width: 688px;
+				background-size: cover;
+				position: absolute;
+				right: 0px;
+				top: 147px;
+				.img-quality-mark{
+					position: absolute;
+					background-size: 100%;
+					background-repeat: no-repeat;
+					left: -100px;
+					top: 55px;
+					height: 144px;
+					width: 163px;
+				}
+			}
+		}
+	}
+	@include media-breakpoint-only(lg) {
+		padding: 0;
+		background-color: $home-header-bg-color;
+		min-height: 630px;
+		box-sizing: border-box;
+		font-family: $default-font, Sans-serif;
+		color: $home-header-color;
+		.container {
+			position: relative;
+			header.home-header {
+				.logo-link {
+					position: absolute;
+					display: block;
+					left: 10px;
+					top: 29px;
+					max-width: 200px;
+					img{
+						width: 100%;
+					}
+				}
+				nav.header-menu{
+					display: block;
+					text-align: right;
+					font-size: 0px;
+					position: relative;
+					& > ul {
+						position: absolute;
+						top: 0;
+						right: 10px;
+						list-style: none;
+						display: inline-block;
+						vertical-align: top;
+						margin: 0;
+						& > li {
+							display: inline-block;
+							vertical-align: top;
+							cursor: pointer;
+							& > a{
+								display: inline-block;
+								vertical-align: top;
+								font-size: 17px;
+								line-height: 96px;
+								padding: 0 15px;
+								font-weight: 700;
+								text-decoration: none;
+								color: $home-header-color;
+								transition: background-color .25s ease-in-out, color .25s ease-in-out;
+								&:hover{
+									background-color: white;
+									color: $home-header-bg-color;
+								}
+							}
+						}
+					}
+				}
+			}
+			.header-title{
+				position: absolute;
+				left: 10px;
+				top: 170px;
+				.header-title-img{
+					max-width: 240px;
+					height: auto;
+				}
+				.header-title-headline{
+					margin-top: 24px;
+					font-weight: 700;
+					font-size: 42px;
+					line-height: 1.2;
+				}
+				.header-title-txt{
+					margin-top: 18px;
+					font-weight: 500;
+					font-size: 15px;
+					line-height: 2.25;
+				}
+			}
+			.header-img-banner{
+				height: 550px;
+				width: 550px;
+				background-size: cover;
+				position: absolute;
+				right: 10px;
+				top: 125px;
+				.img-quality-mark{
+					position: absolute;
+					background-size: 100%;
+					background-repeat: no-repeat;
+					left: -80px;
+					top: 44px;
+					height: 115px;
+					width: 130px;
+				}
+			}
+		}
+	}
+	@include media-breakpoint-only(md) {
+		padding: 0;
+		background-color: $home-header-bg-color;
+		box-sizing: border-box;
+		font-family: $default-font, Sans-serif;
+		color: $home-header-color;
+		.container {
+			position: static;
+			header.home-header {
+				.logo-link {
+					display: block;
+					max-width: 200px;
+					img{
+						margin-top: 29px;
+						width: 100%;
+					}
+				}
+				nav.header-menu{
+					display: block;
+					text-align: right;
+					font-size: 0px;
+					position: relative;
+					& > ul {
+						position: absolute;
+						top: 0;
+						right: 10px;
+						list-style: none;
+						display: inline-block;
+						vertical-align: top;
+						margin: 0;
+						& > li {
+							display: inline-block;
+							vertical-align: top;
+							cursor: pointer;
+							& > a{
+								display: inline-block;
+								vertical-align: top;
+								font-size: 17px;
+								line-height: 96px;
+								padding: 0 15px;
+								//font-family: $default-font ,sans-serif;
+								font-weight: 700;
+								text-decoration: none;
+								color: $home-header-color;
+								transition: background-color .25s ease-in-out, color .25s ease-in-out;
+								&:hover{
+									background-color: white;
+									color: $home-header-bg-color;
+								}
+							}
+						}
+					}
+				}
+			}
+			.header-title{
+				margin-top: 65px;
+				padding-bottom: 25px;
+				.header-title-img{
+					max-width: 180px;
+					height: auto;
+				}
+				.header-title-headline{
+					margin-top: 15px;
+					font-weight: 700;
+					font-size: 32px;
+					line-height: 1.2;
+				}
+				.header-title-txt{
+					margin-top: 18px;
+					font-weight: 500;
+					font-size: 14px;
+					line-height: 1.8;
+				}
+			}
+			.header-img-banner{
+				height: 400px;
+				width: 400px;
+				background-size: cover;
+				right: 30px;
+				top: 125px;
+				position: absolute;
+				.img-quality-mark{
+					position: absolute;
+					background-size: 100%;
+					background-repeat: no-repeat;
+					left: -80px;
+					top: 44px;
+					height: 115px;
+					width: 130px;
+				}
+			}
+		}
+	}
+	@include media-breakpoint-only(sm) {
+		padding: 0;
+		background-color: $home-header-bg-color;
+		box-sizing: border-box;
+		font-family: $default-font, Sans-serif;
+		color: $home-header-color;
+		position: relative;
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 20px;
+			background-color: white;
+			bottom: 0;
+			left: 0;
+		}
+		.container {
+			position: relative;
+			header.home-header {
+				.logo-link {
+					display: block;
+					max-width: 200px;
+					img{
+						margin-top: 29px;
+						width: 100%;
+					}
+				}
+				nav.header-menu{
+					display: block;
+					text-align: right;
+					font-size: 0px;
+					position: relative;
+					& > ul {
+						position: absolute;
+						top: 0;
+						right: 10px;
+						list-style: none;
+						display: inline-block;
+						vertical-align: top;
+						margin: 0;
+						& > li {
+							display: inline-block;
+							vertical-align: top;
+							cursor: pointer;
+							& > a{
+								display: inline-block;
+								vertical-align: top;
+								font-size: 17px;
+								line-height: 96px;
+								padding: 0 15px;
+								font-weight: 700;
+								text-decoration: none;
+								color: $home-header-color;
+								transition: background-color .25s ease-in-out, color .25s ease-in-out;
+								&:hover{
+									background-color: white;
+									color: $home-header-bg-color;
+								}
+							}
+						}
+					}
+				}
+			}
+			.header-title{
+				margin-top: 65px;
+				padding-bottom: 25px;
+				.header-title-img{
+					max-width: 180px;
+					height: auto;
+				}
+				.header-title-headline{
+					margin-top: 15px;
+					font-weight: 700;
+					font-size: 32px;
+					line-height: 1.2;
+				}
+				.header-title-txt{
+					margin-top: 18px;
+					font-weight: 500;
+					font-size: 14px;
+					line-height: 1.8;
+				}
+			}
+			.header-img-banner{
+				height: 400px;
+				width: 400px;
+				background-size: cover;
+				position: relative;
+				margin-left: auto;
+				margin-right: 0;
+				.img-quality-mark{
+					position: absolute;
+					background-size: 100%;
+					background-repeat: no-repeat;
+					left: -80px;
+					top: 44px;
+					height: 115px;
+					width: 130px;
+				}
+			}
+		}
+	}
+	//
+	@include media-breakpoint-only(xs) {
+		padding: 0;
+		background-color: $home-header-bg-color;
+		box-sizing: border-box;
+		font-family: $default-font, Sans-serif;
+		color: $home-header-color;
+		position: relative;
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 20px;
+			background-color: white;
+			bottom: 0;
+			left: 0;
+		}
+		.container {
+			position: relative;
+			header.home-header {
+				.logo-link {
+					display: block;
+					max-width: 200px;
+					img{
+						margin-top: 29px;
+						width: 100%;
+					}
+				}
+				nav.header-menu{
+					display: block;
+					text-align: right;
+					font-size: 0px;
+					position: relative;
+					& > ul {
+						position: absolute;
+						top: 0;
+						right: 10px;
+						list-style: none;
+						display: inline-block;
+						vertical-align: top;
+						margin: 0;
+						& > li {
+							display: inline-block;
+							vertical-align: top;
+							cursor: pointer;
+							& > a{
+								display: inline-block;
+								vertical-align: top;
+								font-size: 17px;
+								line-height: 96px;
+								padding: 0 15px;
+								font-weight: 700;
+								text-decoration: none;
+								color: $home-header-color;
+								transition: background-color .25s ease-in-out, color .25s ease-in-out;
+								&:hover{
+									background-color: white;
+									color: $home-header-bg-color;
+								}
+							}
+						}
+					}
+				}
+			}
+			.header-title{
+				margin-top: 65px;
+				padding-bottom: 25px;
+				.header-title-img{
+					max-width: 180px;
+					height: auto;
+				}
+				.header-title-headline{
+					margin-top: 15px;
+					font-weight: 700;
+					font-size: 32px;
+					line-height: 1.2;
+				}
+				.header-title-txt{
+					margin-top: 18px;
+					font-weight: 500;
+					font-size: 14px;
+					line-height: 1.8;
+				}
+			}
+			.header-img-banner{
+				height: 300px;
+				width: 300px;
+				background-size: cover;
+				position: relative;
+				margin-left: auto;
+				margin-right: 0;
+				.img-quality-mark{
+					position: absolute;
+					background-size: 100%;
+					background-repeat: no-repeat;
+					left: -10px;
+					top: -22px;
+					height: 87px;
+					width: 98px;
+				}
+			}
+		}
+	}
+
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-up(xs) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+	@include media-breakpoint-down(xs) {} 
+
+} // end.header

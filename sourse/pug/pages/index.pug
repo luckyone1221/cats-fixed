@@ -1,0 +1,26 @@
+extends layout/main.pug
+
+include ../blocks/sAdvantage/_sAdvantage.pug
+include ../blocks/sDogsSlider/_sDogsSlider.pug
+include ../blocks/sImportantChemicalsDogs/_sImportantChemicalsDogs.pug
+include ../blocks/sCatsSlider/_sCatsSlider.pug
+include ../blocks/sImportantChemicalsCats/_sImportantChemicalsCats.pug
+include ../blocks/sPerfectFormula/_sPerfectFormula.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'title'
+	title= title
+block pagecontent 
+	+mob-mnu()
+	+header()
+		+topLine()
+		+top-nav()
+	+s-advantage()
+	+s-dogs-slider()
+	+sImportnantChemicalsDogs()
+	+s-cats-slider()
+	+sImportnantChemicalsCats()
+	+sPerfectFormula()
+	+footer()
