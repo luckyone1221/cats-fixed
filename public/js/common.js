@@ -76,8 +76,8 @@ function eventHandler() {
 	svg4everybody({});
 	JSCCommon.mobileMenu(); // JSCCommon.CustomInputFile();
 	// добавляет подложку для pixel perfect
-
-	$(".main-wrapper").after('<div class="screen" style="background-image: url(screen/screen.jpg);"></div>'); // /добавляет подложку для pixel perfect
+	//$(".main-wrapper").after('<div class="screen" style="background-image: url(screen/screen.jpg);"></div>');
+	// /добавляет подложку для pixel perfect
 	// const url = document.location.href;
 	// $.each($(".top-nav__nav a "), function() {
 	// 	if (this.href == url) {
