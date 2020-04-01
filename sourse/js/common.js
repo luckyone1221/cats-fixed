@@ -6,31 +6,6 @@ const JSCCommon = {
 	menuMobileLink: [].slice.call(document.querySelectorAll(".menu-mobile--js ul li a")),
 	body: document.querySelector("body"),
 
-	modalCall() {
-		$(".link-modal").fancybox({
-			arrows: false,
-			infobar: false,
-			touch: false,
-			type: 'inline',
-			i18n: {
-				en: {
-					CLOSE: "Закрыть",
-					NEXT: "Вперед",
-					PREV: "Назад",
-					// PLAY_START: "Start slideshow",
-					// PLAY_STOP: "Pause slideshow",
-					// FULL_SCREEN: "Full screen",
-					// THUMBS: "Thumbnails",
-					// DOWNLOAD: "Download",
-					// SHARE: "Share",
-					// ZOOM: "Zoom"
-				},
-			},
-		});
-		$(".modal-close-js").click(function () {
-			$.fancybox.close();
-		})
-	},
 	// /magnificPopupCall
 	toggleMenu() {
 		let _this = this;
@@ -81,44 +56,25 @@ const JSCCommon = {
 	},
 	// /mobileMenu
 
-	// табы  . 
-	tabscostume(tab) {
-		$('.' + tab + '__caption').on('click', '.' + tab + '__btn:not(.active)', function (e) {
-			$(this)
-				.addClass('active').siblings().removeClass('active')
-				.closest('.' + tab).find('.' + tab + '__content').hide().removeClass('active')
-				.eq($(this).index()).show().addClass('active');
-
-		});
-	},
-	// /табы  
-	inputMask() {
-		// mask for input
-		$('input[type="tel"]').attr("pattern", "[+][0-9]{1}[(][0-9]{3}[)][0-9]{3}-[0-9]{2}-[0-9]{2}").inputmask("+9(999)999-99-99");
-	}
-	// /inputMask
 
 };
 
 function eventHandler() {
 	// полифил для object-fit
-	objectFitImages();
+	//objectFitImages();
 	// Picture element HTML5 shiv
-	document.createElement("picture");
+	//document.createElement("picture");
 	// для свг
 	svg4everybody({});
 
-	JSCCommon.modalCall();
 
-	JSCCommon.tabscostume('tabs');
 
 	JSCCommon.mobileMenu();
 
-	JSCCommon.inputMask();
 
 	// JSCCommon.CustomInputFile();
 	// добавляет подложку для pixel perfect
-	$(".main-wrapper").after('<div class="screen" style="background-image: url(screen/screen.jpg);"></div>');
+	//$(".main-wrapper").after('<div class="screen" style="background-image: url(screen/screen.jpg);"></div>');
 	// /добавляет подложку для pixel perfect
 
 
@@ -149,15 +105,6 @@ function eventHandler() {
 		// 
 		// скрывает моб меню
 
-		const topH = $("header ").innerHeight();
-
-		$(window).scroll(function () {
-			if ($(window).scrollTop() > topH) {
-				$('.top-nav  ').addClass('fixed');
-			} else {
-				$('.top-nav  ').removeClass('fixed');
-			}
-		});
 		// конец добавил
 		if (window.matchMedia("(min-width: 992px)").matches) {
 			JSCCommon.closeMenu();
@@ -172,38 +119,13 @@ function eventHandler() {
 	heightses();
 
 	// листалка по стр
-	$(" .top-nav li a, .scroll-link").click(function () {
+	$(" .menu-mobile__link, .footer-menu-item-link, .ancor-js ").click(function () { //.top-nav li a, .scroll-link
 		const elementClick = $(this).attr("href");
 		const destination = $(elementClick).offset().top;
 
 		$('html, body').animate({ scrollTop: destination }, 1100);
 
 		return false;
-	});
-
-	let defaultSl = {
-
-	}
-	const swiper4 = new Swiper('.color-slider', {
-		// slidesPerView: 5,
-		slidesPerView: 'auto',
-		watchOverflow: true,
-		spaceBetween: 0,
-		freeMode: true,
-		watchOverflow: true,
-		slidesPerGroup: 3,
-
-		// centeredSlides: true,
-		loop: true,
-		loopFillGroupWithBlank: true,
-		touchRatio: 0.2,
-		slideToClickedSlide: true,
-		freeModeMomentum: true,
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-
 	});
 	// modal window
 
@@ -212,92 +134,88 @@ function eventHandler() {
 	var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
 	if (isIE11) {
 		$("body").prepend(`<p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p>`)
-
 	}
-};
-if (document.readyState !== 'loading') {
-	eventHandler();
-} else {
-	document.addEventListener('DOMContentLoaded', eventHandler);
-}
-
-//cutom code
+	//cutom code
 
 //dogs-slider
-var dogsSlider = new Swiper ('.dogs-slider-swiper-cont', {
-	// Optional parameters
-	loop: true,
+	var dogsSlider = new Swiper ('.dogs-slider-swiper-cont', {
+		// Optional parameters
+		loop: true,
 
-	breakpoints: {
-		2810: {
-			spaceBetween: 48,
-			slidesPerView: 4,
+		breakpoints: {
+			2810: {
+				spaceBetween: 48,
+				slidesPerView: 4,
+			},
+			1200: {
+				spaceBetween: 15,
+				slidesPerView: 4,
+			},
+			992: {
+				spaceBetween: 15,
+				slidesPerView: 3,
+			},
+			768: {
+				spaceBetween: 10,
+				slidesPerView: 3,
+			},
+			576: {
+				spaceBetween: 10,
+				slidesPerView: 2,
+			},
 		},
-		1200: {
-			spaceBetween: 20,
-			slidesPerView: 4,
+		lazy: {
+			loadPrevNext: true
 		},
-		992: {
-			spaceBetween: 15,
-			slidesPerView: 3,
-		},
-		768: {
-			spaceBetween: 10,
-			slidesPerView: 3,
-		},
-		576: {
-			spaceBetween: 10,
-			slidesPerView: 2,
-		},
-	},
 
 
-	// Navigation arrows
-	navigation: {
-		nextEl: '.dogs-swiper-next',
-		prevEl: '.dogs-swiper-prev',
-	},
-});
+		// Navigation arrows
+		navigation: {
+			nextEl: '.dogs-swiper-next',
+			prevEl: '.dogs-swiper-prev',
+		},
+	});
 
 //cats slider
-var CatsSlider = new Swiper ('.cats-slider-cont', {
-	// Optional parameters
-	loop: true,
+	var CatsSlider = new Swiper ('.cats-slider-cont', {
+		// Optional parameters
+		loop: true,
 
-	breakpoints: {
-		2810: {
-			spaceBetween: 48,
-			slidesPerView: 4,
+		breakpoints: {
+			2810: {
+				spaceBetween: 48,
+				slidesPerView: 4,
+			},
+			1200: {
+				spaceBetween: 15,
+				slidesPerView: 4,
+			},
+			992: {
+				spaceBetween: 15,
+				slidesPerView: 3,
+			},
+			768: {
+				spaceBetween: 10,
+				slidesPerView: 3,
+			},
+			576: {
+				spaceBetween: 10,
+				slidesPerView: 2,
+			},
 		},
-		1200: {
-			spaceBetween: 20,
-			slidesPerView: 4,
+		lazy: {
+			loadPrevNext: true
 		},
-		992: {
-			spaceBetween: 15,
-			slidesPerView: 3,
-		},
-		768: {
-			spaceBetween: 10,
-			slidesPerView: 3,
-		},
-		576: {
-			spaceBetween: 10,
-			slidesPerView: 2,
-		},
-	},
 
-
-	// Navigation arrows
-	navigation: {
-		nextEl: '.cats-swiper-next',
-		prevEl: '.cats-swiper-prev',
-	},
-});
+		// Navigation arrows
+		navigation: {
+			nextEl: '.cats-swiper-next',
+			prevEl: '.cats-swiper-prev',
+		},
+	});
 
 // wrap some el in spans
-function wrapFirstWordinSpan(elementsSelectorsArr) {
-	$(document).ready(function () {
+	function wrapFirstWordinSpan(elementsSelectorsArr) {
 		for (let selector of elementsSelectorsArr){
 			$(selector).each(function () {
 				let amountofWords = this.getAttribute('data-wrap-words');
@@ -307,7 +225,26 @@ function wrapFirstWordinSpan(elementsSelectorsArr) {
 				this.innerHTML = wordsInSpan + innerWords.join(' ');
 			})
 		}
-	})
-};
+	};
 
-wrapFirstWordinSpan(['.s-cats-slider .taste-txt']);
+	wrapFirstWordinSpan(['.s-cats-slider .taste-txt']);
+
+//$(window).resize();
+
+	function changeSymbForSpace(elementsSelectorsArr) {
+		for (let selector of elementsSelectorsArr){
+			$(selector).each(function () {
+				let innerHTML = this.innerHTML;
+				console.log(innerHTML)
+			});
+		}
+	};
+
+	changeSymbForSpace(['']);
+};
+if (document.readyState !== 'loading') {
+	eventHandler();
+} else {
+	document.addEventListener('DOMContentLoaded', eventHandler);
+}
+

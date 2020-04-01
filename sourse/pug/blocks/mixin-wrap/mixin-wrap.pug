@@ -131,10 +131,10 @@ mixin mnu()
 mixin mnu()
 	-
 		var nav= {
-			"Корма для собак":"/",
-			"Корма для кошек":"#",
-			"Идеальная формула":"#",
-			"Контакты ":"#",
+			"Корма для собак":"#s-dogs-slider",
+			"Корма для кошек":"#s-cats-slider",
+			"Идеальная формула":"#s-perfect-formula",
+			"Контакты ":".footer",
 			}
 	+e.UL.nav(itemscope itemtype="http://schema.org/SiteNavigationElement")
 		each linkPatch, linkName in nav

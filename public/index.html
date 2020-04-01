@@ -21,7 +21,7 @@
 		<!-- Custom Browsers Color-->
 		<meta name="theme-color" content="#3361d8">
 		<link rel="stylesheet" href="libs/swiper/css/swiper.min.css"/>
-		<link rel="stylesheet" href="libs/@fancyapps/fancybox/jquery.fancybox.min.css"/>
+		<!--link(rel="stylesheet", href="libs/@fancyapps/fancybox/jquery.fancybox.min.css")-->
 		<link rel="stylesheet" href="css/main.min.css"/>
 	</head>
 	<body><!--[if lt IE 11]><p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p><![endif]-->
@@ -33,13 +33,13 @@
 				</div>
 				<div class="menu-mobile__inner">
 					<ul class="menu-mobile__nav" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="/" itemprop="url">Корма для собак</a>
+						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#s-dogs-slider" itemprop="url">Корма для собак</a>
 						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url">Корма для кошек</a>
+						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#s-cats-slider" itemprop="url">Корма для кошек</a>
 						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url">Идеальная формула</a>
+						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#s-perfect-formula" itemprop="url">Идеальная формула</a>
 						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url">Контакты </a>
+						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href=".footer" itemprop="url">Контакты </a>
 						</li>
 					</ul>
 					<div class="text-right"></div>
@@ -49,59 +49,67 @@
 			<!-- start header-->
 			<section class="header section" id="header">
 				<div class="container">
-					<header class="home-header"><a class="logo-link" href="#"><img src="img/header-img/logo.png"/></a>
+					<header class="home-header"><a class="logo-link" href="#"><img src="img/@2x/logo.png"/></a>
 						<nav class="header-menu d-none d-lg-block">
 							<ul>
-								<li><a href="#">Корма для собак</a></li>
-								<li><a href="#">Корма для кошек</a></li>
-								<li><a href="#">Идеальная формула</a></li>
-								<li><a href="#">Контакты</a></li>
+								<li><a class="ancor-js" href="#s-dogs-slider">Корма для собак</a></li>
+								<li><a class="ancor-js" href="#s-cats-slider">Корма для кошек</a></li>
+								<li><a class="ancor-js" href="#s-perfect-formula">Идеальная формула</a></li>
+								<li><a class="ancor-js" href=".footer">Контакты</a></li>
 							</ul>
 						</nav>
 					</header>
-					<div class="header-title"><img class="header-title-img" src="img/header-img/cats-and-dogs-every-sort.png"/>
-						<h1 class="header-title-headline">Лучшее<br/>от природы<br/>для любимых<br/>друзей.</h1>
-						<p class="header-title-txt">В Natural Balance мы предлагаем<br/>только премиальный, рекомендованный<br/>ветеринарами корм для собак и кошек</p>
+					<div class="header-title"><img class="header-title-img" src="img/@2x/cats-and-dogs-every-sort.png"/>
+						<h1 class="header-title-headline">
+							Лучшее
+							от&nbsp;природы
+							для&nbsp;любимых
+							друзей.
+						</h1>
+						<p class="header-title-txt">
+							В Natural Balance мы предлагаем
+							только&nbsp;премиальный,&nbsp;рекомендованный
+							ветеринарами корм для собак и кошек
+						</p>
 					</div>
-					<div class="header-img-banner" style="background-image: url(img/header-img/cat-and-dog-img.png)">
-						<div class="img-quality-mark" style="background-image: url(img/header-img/quality-mark.png)"></div>
+					<div class="header-img-banner" style="background-image: url(img/@2x/cat-and-dog-img.png)">
+						<div class="img-quality-mark" style="background-image: url(img/@2x/quality-mark.png)"></div>
 					</div>
 				</div>
 			</section>
 			<!-- start s-test-->
 			<section class="s-advantage section" id="s-test">
-				<div class="container"><img class="small-cat-and-dog" src="img/advantage-img/small-cat-and-dog-icon.png"/>
+				<div class="container"><img class="small-cat-and-dog" src="img/@2x/small-cat-and-dog-icon.png"/>
 					<h2 class="advantage-title">Премиальный полнорационный корм</h2>
 					<ul class="advantages-pills-list row">
 						<li class="advantages-pills-list-item col-md-5 col-10">
-							<div class="inner-img-container" style="background-color: #c5e6c5 ;"><img class="inner-img" src="img/advantage-img/bones-item.png"/></div>
+							<div class="inner-img-container" style="background-color: #c5e6c5 ;"><img class="inner-img" src="img/svg/advant-1.svg"/></div>
 							<p class="pill-description">Полностью<br/>сбалансированный состав</p>
 						</li>
 						<li class="advantages-pills-list-item col-md-5 col-10">
-							<div class="inner-img-container" style="background-color: #fcccb9 ;"><img class="inner-img" src="img/advantage-img/plate-item.png"/></div>
+							<div class="inner-img-container" style="background-color: #fcccb9 ;"><img class="inner-img" src="img/svg/advant-2.svg"/></div>
 							<p class="pill-description">Высокая<br/>поедаемость</p>
 						</li>
 						<li class="advantages-pills-list-item col-md-5 col-10">
-							<div class="inner-img-container" style="background-color: #fdd2e5 ;"><img class="inner-img" src="img/advantage-img/drugs-item.png"/></div>
+							<div class="inner-img-container" style="background-color: #fdd2e5 ;"><img class="inner-img" src="img/svg/advant-3.svg"/></div>
 							<p class="pill-description">Содержит пребиотики<br/>для пищеварения</p>
 						</li>
 						<li class="advantages-pills-list-item col-md-5 col-10">
-							<div class="inner-img-container" style="background-color: #aae3dd ;"><img class="inner-img" src="img/advantage-img/chempion-item.png"/></div>
+							<div class="inner-img-container" style="background-color: #aae3dd ;"><img class="inner-img" src="img/svg/advant-4.svg"/></div>
 							<p class="pill-description">Качество<br/>Human Grade</p>
 						</li>
 					</ul>
 					<div class="convince-txt-container">
-						<h6 class="convince-txt-head-line">Мы больше,<br/>чем просто эксперты</h6>
-						<p class="convince-txt-par">в области здоровья животных. Многие из нас также счастливые&nbsp; владельцы&nbsp; домашних кошек и собак. Сочетание профессиональных знаний и безграничной любви к домашним животным  позволяет  создавать  нам лучшие премиальные продукты<br class="d-none d-md-block"/>для ваших любимых друзей.</p>
-						<div class="convince-img" style="background-image: url(img/advantage-img/cat-dog-ducks.jpg)"></div>
+						<div class="convince-txt-head-line">Мы больше,<br/>чем просто эксперты</div>
+						<p class="convince-txt-par">в области здоровья животных. Многие из нас также счастливые&nbsp; владельцы&nbsp; домашних кошек и собак. Сочетание профессиональных знаний и безграничной любви к домашним животным  позволяет  создавать  нам лучшие премиальные продукты<br class="d-none d-base-xl-block"/>для ваших любимых друзей.</p>
+						<div class="convince-img" style="background-image: url(img/@2x/cat-dog-ducks.jpg)"></div>
 					</div>
-					<div class="row"></div>
 				</div>
 			</section>
 			<!-- end s-test-->
 			<!-- start s-test-->
-			<section class="s-dogs-slider section" id="s-test">
-				<div class="container"><img class="small-cat-and-dog" src="img/s-dogs-slider/small-dog-only.png"/>
+			<section class="s-dogs-slider section" id="s-dogs-slider">
+				<div class="container"><img class="small-cat-and-dog" src="img/@2x/small-dog-only.png"/>
 					<h2 class="advantage-title h2">Формула для собак</h2>
 				</div>
 				<div class="slider-container">
@@ -110,75 +118,29 @@
 					<div class="dogs-slider-swiper-cont">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide" style="background-color: #f6ebc9;">
-								<div class="recipe-cont"><img class="small-dog-img" src="img/s-dogs-slider/small-dog-blue.png"/>
+								<div class="recipe-cont"><img class="small-dog-img swiper-lazy" src="#" data-src="img/@2x/small-dog-blue.png"/>
 									<h4 class="h4 recipe-txt">РЕЦЕПТ ДЛЯ ЩЕНКОВ</h4>
-								</div>
-								<div class="can-img" style="background-image: url(img/s-dogs-slider/slider-img/4_Schenki_Cypa.png)"></div>
+								</div><img class="can-img small-can swiper-lazy" src="#" data-src="img/@2x/4_Schenki_Cypa.png"/>
 								<div class="lower-info-cont"><span class="taste-txt">С ЦЫПЛЁНКОМ</span><span class="info-txt">240г. 12 банок</span>
-									<div class="code-cont"><img class="code-img" src="img/s-dogs-slider/slider-img/code-img.png"/><span class="code-num">4606180018710</span></div>
+									<div class="code-cont"><img class="code-img swiper-lazy" src="#" data-src="img/@2x/code-img.png"/><span class="code-num">4606180018710</span></div>
 								</div>
 							</div>
 							<div class="swiper-slide" style="background-color: #ffe6f2;">
-								<div class="recipe-cont"><img class="small-dog-img" src="img/s-dogs-slider/small-dog-blue.png"/>
+								<div class="recipe-cont"><img class="small-dog-img swiper-lazy" src="#" data-src="img/@2x/small-dog-blue.png"/>
 									<h4 class="h4 recipe-txt">РЕЦЕПТ ДЛЯ ЩЕНКОВ</h4>
-								</div>
-								<div class="can-img" style="background-image: url(img/s-dogs-slider/slider-img/2.png)"></div>
+								</div><img class="can-img small-can swiper-lazy" src="#" data-src="img/@2x/2.png"/>
 								<div class="lower-info-cont"><span class="taste-txt">с телятиной и ПЕЧЕНЬЮ с телятиной и ПЕЧЕНЬЮ</span><span class="info-txt">240г. 12 банок</span>
-									<div class="code-cont"><img class="code-img" src="img/s-dogs-slider/slider-img/code-img.png"/><span class="code-num">4606180018710</span></div>
+									<div class="code-cont"><img class="code-img swiper-lazy" src="#" data-src="img/@2x/code-img.png"/><span class="code-num">4606180018710</span></div>
 								</div>
 							</div>
-							<div class="swiper-slide" style="background-color: #ffdbdb;">
-								<div class="recipe-cont d-none"><img class="small-dog-img" src="img/s-dogs-slider/small-dog-blue.png"/>
-									<h4 class="h4 recipe-txt">РЕЦЕПТ ДЛЯ ЩЕНКОВ3</h4>
-								</div>
-								<div class="can-img" style="background-image: url(img/s-dogs-slider/slider-img/3.png)"></div>
+							<div class="swiper-slide" style="background-color: #ffdbdb;"><img class="can-img big-can swiper-lazy" src="#" data-src="img/@2x/3.png"/>
 								<div class="lower-info-cont"><span class="taste-txt">с говядиной</span><span class="info-txt">340г. 12 банок</span>
-									<div class="code-cont"><img class="code-img" src="img/s-dogs-slider/slider-img/code-img.png"/><span class="code-num">4606180018710</span></div>
+									<div class="code-cont"><img class="code-img swiper-lazy" src="#" data-src="img/@2x/code-img.png"/><span class="code-num">4606180018710</span></div>
 								</div>
 							</div>
-							<div class="swiper-slide" style="background-color: #ffdbdb;">
-								<div class="recipe-cont d-none"><img class="small-dog-img" src="img/s-dogs-slider/small-dog-blue.png"/>
-									<h4 class="h4 recipe-txt">РЕЦЕПТ ДЛЯ ЩЕНКОВ4</h4>
-								</div>
-								<div class="can-img" style="background-image: url(img/s-dogs-slider/slider-img/4.png)"></div>
+							<div class="swiper-slide" style="background-color: #ffdbdb;"><img class="can-img big-can swiper-lazy" src="#" data-src="img/@2x/4.png"/>
 								<div class="lower-info-cont"><span class="taste-txt">с говядиной и гречкой</span><span class="info-txt">340г. 12 банок</span>
-									<div class="code-cont"><img class="code-img" src="img/s-dogs-slider/slider-img/code-img.png"/><span class="code-num">4606180018710</span></div>
-								</div>
-							</div>
-							<div class="swiper-slide" style="background-color: #f6ebc9;">
-								<div class="recipe-cont"><img class="small-dog-img" src="img/s-dogs-slider/small-dog-blue.png"/>
-									<h4 class="h4 recipe-txt">РЕЦЕПТ ДЛЯ ЩЕНКОВ</h4>
-								</div>
-								<div class="can-img" style="background-image: url(img/s-dogs-slider/slider-img/4_Schenki_Cypa.png)"></div>
-								<div class="lower-info-cont"><span class="taste-txt">С ЦЫПЛЁНКОМ</span><span class="info-txt">240г. 12 банок</span>
-									<div class="code-cont"><img class="code-img" src="img/s-dogs-slider/slider-img/code-img.png"/><span class="code-num">4606180018710</span></div>
-								</div>
-							</div>
-							<div class="swiper-slide" style="background-color: #ffe6f2;">
-								<div class="recipe-cont"><img class="small-dog-img" src="img/s-dogs-slider/small-dog-blue.png"/>
-									<h4 class="h4 recipe-txt">РЕЦЕПТ ДЛЯ ЩЕНКОВ</h4>
-								</div>
-								<div class="can-img" style="background-image: url(img/s-dogs-slider/slider-img/2.png)"></div>
-								<div class="lower-info-cont"><span class="taste-txt">с телятиной и ПЕЧЕНЬЮ</span><span class="info-txt">240г. 12 банок</span>
-									<div class="code-cont"><img class="code-img" src="img/s-dogs-slider/slider-img/code-img.png"/><span class="code-num">4606180018710</span></div>
-								</div>
-							</div>
-							<div class="swiper-slide" style="background-color: #ffdbdb;">
-								<div class="recipe-cont d-none"><img class="small-dog-img" src="img/s-dogs-slider/small-dog-blue.png"/>
-									<h4 class="h4 recipe-txt">РЕЦЕПТ ДЛЯ ЩЕНКОВ3</h4>
-								</div>
-								<div class="can-img" style="background-image: url(img/s-dogs-slider/slider-img/3.png)"></div>
-								<div class="lower-info-cont"><span class="taste-txt">с говядиной</span><span class="info-txt">340г. 12 банок</span>
-									<div class="code-cont"><img class="code-img" src="img/s-dogs-slider/slider-img/code-img.png"/><span class="code-num">4606180018710</span></div>
-								</div>
-							</div>
-							<div class="swiper-slide" style="background-color: #ffdbdb;">
-								<div class="recipe-cont d-none"><img class="small-dog-img" src="img/s-dogs-slider/small-dog-blue.png"/>
-									<h4 class="h4 recipe-txt">РЕЦЕПТ ДЛЯ ЩЕНКОВ4</h4>
-								</div>
-								<div class="can-img" style="background-image: url(img/s-dogs-slider/slider-img/4.png)"></div>
-								<div class="lower-info-cont"><span class="taste-txt">с говядиной и гречкой</span><span class="info-txt">340г. 12 банок</span>
-									<div class="code-cont"><img class="code-img" src="img/s-dogs-slider/slider-img/code-img.png"/><span class="code-num">4606180018710</span></div>
+									<div class="code-cont"><img class="code-img swiper-lazy" src="#" data-src="img/@2x/code-img.png"/><span class="code-num">4606180018710</span></div>
 								</div>
 							</div>
 						</div>
@@ -190,20 +152,20 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-20 col-lg-10 pet-and-text">
-							<h3 class="h3 pet-txt-headline">Разнообразное меню для собак всех пород.</h3>
+							<div class="h3 pet-txt-headline">Разнообразное меню для собак всех пород.</div>
 							<p class="descr-par">Включает в себя полезные рецептуры с овощами &nbsp;и &nbsp;безглютеновыми крупами – гречкой и рисом</p>
-							<div class="pet-img-container"><img class="pet-item" src="img/DogsChems/dog-and-plate.png"/>
+							<div class="pet-img-container"><img class="pet-item" src="img/@2x/dog-and-plate.png"/>
 								<div class="elipse" style="background-color: #e6677d"><span class="inner-txt">на основе натурального мяса</span></div>
 							</div>
 						</div>
-						<div class="col-20 col-lg-10 img-block d-none d-sm-block"><img class="pet-img-square" src="img/DogsChems/spring-dog.jpg"/></div>
+						<div class="col-20 col-lg-10 img-block d-none d-sm-block"><img class="pet-img-square" src="img/@2x/spring-dog.jpg"/></div>
 					</div>
 				</div>
 			</section>
 			<!-- end sContact .d-none.d-lg-block-->
 			<!-- start s-test-->
-			<section class="s-cats-slider section" id="s-test">
-				<div class="container"><img class="small-cat-and-dog" src="img/s-cats-slider/small-brown-cat.png"/>
+			<section class="s-cats-slider section" id="s-cats-slider">
+				<div class="container"><img class="small-cat-and-dog" src="img/@2x/small-brown-cat.png"/>
 					<h2 class="advantage-title h2">Формула для кошек</h2>
 				</div>
 				<div class="slider-container">
@@ -212,39 +174,29 @@
 					<div class="cats-slider-cont">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide" style="background-color: #c2e7ff;">
-								<div class="recipe-cont"><img class="small-dog-img" src="img/s-cats-slider/small-cat-blue.png"/>
+								<div class="recipe-cont"><img class="small-dog-img swiper-lazy" src="#" data-src="img/@2x/small-cat-blue.png"/>
 									<h4 class="h4 recipe-txt">РЕЦЕПТ ДЛЯ КОТЯТ</h4>
-								</div>
-								<div class="can-img" style="background-image: url(img/s-cats-slider/slider-img/1.png)"></div>
+								</div><img class="can-img small-can swiper-lazy" src="#" data-src="img/@2x/1cat.png"/>
 								<div class="lower-info-cont"><span class="taste-txt" data-wrap-words="1">сардины в соусе</span><span class="info-txt">100г. 20банок</span>
-									<div class="code-cont"><img class="code-img" src="img/s-dogs-slider/slider-img/code-img.png"/><span class="code-num">4606180018710</span></div>
+									<div class="code-cont"><img class="code-img swiper-lazy" src="#" data-src="img/@2x/code-img.png"/><span class="code-num">4606180018710</span></div>
 								</div>
 							</div>
 							<div class="swiper-slide" style="background-color: #ffeec2;">
-								<div class="recipe-cont"><img class="small-dog-img" src="img/s-cats-slider/small-cat-blue.png"/>
+								<div class="recipe-cont"><img class="small-dog-img swiper-lazy" src="#" data-src="img/@2x/small-cat-blue.png"/>
 									<h4 class="h4 recipe-txt">РЕЦЕПТ ДЛЯ КОТЯТ</h4>
-								</div>
-								<div class="can-img" style="background-image: url(img/s-cats-slider/slider-img/2.png)"></div>
+								</div><img class="can-img small-can swiper-lazy" src="#" data-src="img/@2x/2cat.png"/>
 								<div class="lower-info-cont"><span class="taste-txt" data-wrap-words="2">мясное ассорти с цыпленком и печенью</span><span class="info-txt">100г. 20банок</span>
-									<div class="code-cont"><img class="code-img" src="img/s-dogs-slider/slider-img/code-img.png"/><span class="code-num">4606180018710</span></div>
+									<div class="code-cont"><img class="code-img swiper-lazy" src="#" data-src="img/@2x/code-img.png"/><span class="code-num">4606180018710</span></div>
 								</div>
 							</div>
-							<div class="swiper-slide" style="background-color: #ffe1c6;">
-								<div class="recipe-cont d-none"><img class="small-dog-img" src="img/s-cats-slider/small-cat-blue.png"/>
-									<h4 class="h4 recipe-txt">РЕЦЕПТ ДЛЯ ЩЕНКОВ3</h4>
-								</div>
-								<div class="can-img" style="background-image: url(img/s-cats-slider/slider-img/3.png)"></div>
+							<div class="swiper-slide" style="background-color: #ffe1c6;"><img class="can-img small-can swiper-lazy" src="#" data-src="img/@2x/3cat.png"/>
 								<div class="lower-info-cont"><span class="taste-txt" data-wrap-words="2">мясное ассорти с курицей и потрошками</span><span class="info-txt">100г. 20банок</span>
-									<div class="code-cont"><img class="code-img" src="img/s-dogs-slider/slider-img/code-img.png"/><span class="code-num">4606180018710</span></div>
+									<div class="code-cont"><img class="code-img swiper-lazy" src="#" data-src="img/@2x/code-img.png"/><span class="code-num">4606180018710</span></div>
 								</div>
 							</div>
-							<div class="swiper-slide" style="background-color: #ffe4ee;">
-								<div class="recipe-cont d-none"><img class="small-dog-img" src="img/s-cats-slider/small-cat-blue.png"/>
-									<h4 class="h4 recipe-txt">РЕЦЕПТ ДЛЯ ЩЕНКОВ4</h4>
-								</div>
-								<div class="can-img" style="background-image: url(img/s-cats-slider/slider-img/4.png)"></div>
+							<div class="swiper-slide" style="background-color: #ffe4ee;"><img class="can-img small-can swiper-lazy" src="#" data-src="img/@2x/4cat.png"/>
 								<div class="lower-info-cont"><span class="taste-txt" data-wrap-words="2">мясное ассорти с телятиной и печенью</span><span class="info-txt">100г. 20банок</span>
-									<div class="code-cont"><img class="code-img" src="img/s-dogs-slider/slider-img/code-img.png"/><span class="code-num">4606180018710</span></div>
+									<div class="code-cont"><img class="code-img swiper-lazy" src="#" data-src="img/@2x/code-img.png"/><span class="code-num">4606180018710</span></div>
 								</div>
 							</div>
 						</div>
@@ -256,41 +208,41 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-20 col-lg-10 pet-and-text">
-							<h3 class="h3 pet-txt-headline">В корма для кошек добавлены</h3>
+							<div class="h3 pet-txt-headline">В корма для кошек добавлены</div>
 							<p class="descr-par">жизненно важные вещества<br/>такие как: таурин, аргинин и холин<br/>в суточной биологической потребности</p>
-							<div class="pet-img-container"><img class="pet-item" src="img/CatsChems/cat-and-plate.png"/>
+							<div class="pet-img-container"><img class="pet-item" src="img/@2x/cat-and-plate.png"/>
 								<div class="elipse" style="background-color: #1dc5c3"><span class="inner-txt">таурин,<br/>аргинин и холин<span class="small-txt">в суточной биологической потребности</span></span></div>
 							</div>
 						</div>
-						<div class="col-20 col-lg-10 img-block d-none d-sm-block"><img class="pet-img-square" src="img/CatsChems/blue-green-eyes-cat.jpg"/></div>
+						<div class="col-20 col-lg-10 img-block d-none d-sm-block"><img class="pet-img-square" src="img/@2x/blue-green-eyes-cat.jpg"/></div>
 					</div>
 				</div>
 			</section>
 			<!-- end sContact .d-none.d-lg-block-->
 			<!-- start s-perfect-formula-->
-			<section class="s-perfect-formula section" id="sContact">
+			<section class="s-perfect-formula section" id="s-perfect-formula">
 				<div class="container text-center">
 					<h4 class="s-headline">Идеальная формула.</h4>
 					<p class="class-headline-description">Корм «Натуральный баланс» содержит натуральные и полезные для Вашего питомца ингредиенты:<br class="d-none d-lg-block"/>мясо, рыба, овощи,  безглютеновые крупы: гречка и рис, кальций, фосфор и витамины.</p>
 					<div class="component-pills row">
 						<div class="component-pill-item col-lg-4">
-							<div class="img-container"><img class="component-img" src="img/comoponents-img/1.png"/></div>
+							<div class="img-container"><img class="component-img" src="img/@2x/1component.png"/></div>
 							<p class="component-descr">Мясо</p>
 						</div>
 						<div class="component-pill-item col-lg-4">
-							<div class="img-container"><img class="component-img" src="img/comoponents-img/2.png"/></div>
+							<div class="img-container"><img class="component-img" src="img/@2x/2component.png"/></div>
 							<p class="component-descr">Рыба</p>
 						</div>
 						<div class="component-pill-item col-lg-4">
-							<div class="img-container"><img class="component-img" src="img/comoponents-img/3.png"/></div>
+							<div class="img-container"><img class="component-img" src="img/@2x/3component.png"/></div>
 							<p class="component-descr">Овощи</p>
 						</div>
 						<div class="component-pill-item col-lg-4">
-							<div class="img-container"><img class="component-img" src="img/comoponents-img/4.png"/></div>
+							<div class="img-container"><img class="component-img" src="img/@2x/4component.png"/></div>
 							<p class="component-descr">Безглютеновые крупы: гречка и рис</p>
 						</div>
 						<div class="component-pill-item col-lg-4">
-							<div class="img-container"><img class="component-img" src="img/comoponents-img/5.png"/></div>
+							<div class="img-container"><img class="component-img" src="img/@2x/5component.png"/></div>
 							<p class="component-descr">Кальций, фосфор и витамины.</p>
 						</div>
 					</div>
@@ -302,15 +254,15 @@
 					<div class="place-for-address-contacts">
 						<p class="inner-txt">МЕСТО ПОД АДРЕСНЫЙ БЛОК КОНТАКТОВ</p>
 					</div>
-					<div class="footer-logo-block"><img class="small-cat-and-dog" src="img/footer/small-cat-and-dog-icon.png"/><img class="footer-logo" src="img/footer/footer-logo.png"/>
+					<div class="footer-logo-block"><img class="small-cat-and-dog" src="img/@2x/small-cat-and-dog-icon.png"/><img class="footer-logo" src="img/@2x/footer-logo.png"/>
 						<div class="footer-logo-txt">для кошек и собак всех пород</div>
 					</div>
 					<nav class="footer-menu">
 						<ul class="footer-menu-list">
-							<li class="footer-menu-item"><a class="footer-menu-item-link" href="#">Корма для собак</a></li>
-							<li class="footer-menu-item"><a class="footer-menu-item-link" href="#">Корма для кошек</a></li>
-							<li class="footer-menu-item"><a class="footer-menu-item-link" href="#">Идеальная формула</a></li>
-							<li class="footer-menu-item"><a class="footer-menu-item-link" href="#">Контакты</a></li>
+							<li class="footer-menu-item"><a class="footer-menu-item-link" href="#s-dogs-slider">Корма для собак</a></li>
+							<li class="footer-menu-item"><a class="footer-menu-item-link" href="#s-cats-slider">Корма для кошек</a></li>
+							<li class="footer-menu-item"><a class="footer-menu-item-link" href="#s-perfect-formula">Идеальная формула</a></li>
+							<li class="footer-menu-item"><a class="footer-menu-item-link" href=".footer">Контакты</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -345,14 +297,14 @@
 			<!-- #modal-call-->
 		</div>
 		<!-- modal-->
-		<script src="js/lazy.js"></script>
+		<!--script(src="js/lazy.js")-->
 		<script src="libs/jquery/jquery.min.js"></script>
 		<!-- полифил для picture-->
 		<script src="libs/picturefill/picturefill.min.js"></script>
 		<!-- полифил для object-fit-->
 		<script src="libs/object-fit-images/ofi.min.js"></script>
 		<!-- modal libs-->
-		<script src="libs/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
+		<!--script(src="libs/@fancyapps/fancybox/jquery.fancybox.min.js")-->
 		<!-- modal libs-->
 		<!-- slider libs-->
 		<script src="libs/swiper/js/swiper.min.js"></script>

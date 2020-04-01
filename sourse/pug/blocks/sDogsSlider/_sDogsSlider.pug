@@ -1,8 +1,8 @@
 mixin s-dogs-slider()
 	// start s-test
-	+b.SECTION.s-dogs-slider.section#s-test&attributes(attributes)
+	+b.SECTION.s-dogs-slider.section#s-dogs-slider&attributes(attributes)
 		.container
-			img.small-cat-and-dog(src="img/s-dogs-slider/small-dog-only.png")
+			img.small-cat-and-dog(src="img/@2x/small-dog-only.png")
 			h2.advantage-title.h2 Формула для собак
 		.slider-container
 			.dogs-swiper-prev
@@ -11,90 +11,40 @@ mixin s-dogs-slider()
 				.swiper-wrapper
 					.swiper-slide(style='background-color: #f6ebc9;')
 						.recipe-cont
-							img.small-dog-img(src="img/s-dogs-slider/small-dog-blue.png")
+							img.small-dog-img.swiper-lazy(src="#" data-src="img/@2x/small-dog-blue.png")
 							h4.h4.recipe-txt РЕЦЕПТ ДЛЯ ЩЕНКОВ
-						.can-img(style="background-image: url(img/s-dogs-slider/slider-img/4_Schenki_Cypa.png)")
+						img.can-img.small-can.swiper-lazy(src="#" data-src="img/@2x/4_Schenki_Cypa.png")
 						.lower-info-cont
 							span.taste-txt С ЦЫПЛЁНКОМ
 							span.info-txt 240г. 12 банок
 							.code-cont
-								img.code-img(src='img/s-dogs-slider/slider-img/code-img.png')
+								img.code-img.swiper-lazy(src="#" data-src='img/@2x/code-img.png')
 								span.code-num 4606180018710
 					.swiper-slide(style='background-color: #ffe6f2;')
 						.recipe-cont
-							img.small-dog-img(src="img/s-dogs-slider/small-dog-blue.png")
+							img.small-dog-img.swiper-lazy(src="#" data-src="img/@2x/small-dog-blue.png")
 							h4.h4.recipe-txt РЕЦЕПТ ДЛЯ ЩЕНКОВ
-						.can-img(style="background-image: url(img/s-dogs-slider/slider-img/2.png)")
+						img.can-img.small-can.swiper-lazy(src="#" data-src="img/@2x/2.png")
 						.lower-info-cont
 							span.taste-txt с телятиной и ПЕЧЕНЬЮ с телятиной и ПЕЧЕНЬЮ
 							span.info-txt 240г. 12 банок
 							.code-cont
-								img.code-img(src='img/s-dogs-slider/slider-img/code-img.png')
+								img.code-img.swiper-lazy(src="#" data-src='img/@2x/code-img.png')
 								span.code-num 4606180018710
 					.swiper-slide(style='background-color: #ffdbdb;')
-						.recipe-cont.d-none
-							img.small-dog-img(src="img/s-dogs-slider/small-dog-blue.png")
-							h4.h4.recipe-txt РЕЦЕПТ ДЛЯ ЩЕНКОВ3
-						.can-img(style="background-image: url(img/s-dogs-slider/slider-img/3.png)")
+						img.can-img.big-can.swiper-lazy(src="#" data-src="img/@2x/3.png")
 						.lower-info-cont
 							span.taste-txt с говядиной
 							span.info-txt 340г. 12 банок
 							.code-cont
-								img.code-img(src='img/s-dogs-slider/slider-img/code-img.png')
+								img.code-img.swiper-lazy(src="#" data-src='img/@2x/code-img.png')
 								span.code-num 4606180018710
 					.swiper-slide(style='background-color: #ffdbdb;')
-						.recipe-cont.d-none
-							img.small-dog-img(src="img/s-dogs-slider/small-dog-blue.png")
-							h4.h4.recipe-txt РЕЦЕПТ ДЛЯ ЩЕНКОВ4
-						.can-img(style="background-image: url(img/s-dogs-slider/slider-img/4.png)")
+						img.can-img.big-can.swiper-lazy(src="#" data-src="img/@2x/4.png")
 						.lower-info-cont
 							span.taste-txt с говядиной и гречкой
 							span.info-txt 340г. 12 банок
 							.code-cont
-								img.code-img(src='img/s-dogs-slider/slider-img/code-img.png')
-								span.code-num 4606180018710
-					.swiper-slide(style='background-color: #f6ebc9;')
-						.recipe-cont
-							img.small-dog-img(src="img/s-dogs-slider/small-dog-blue.png")
-							h4.h4.recipe-txt РЕЦЕПТ ДЛЯ ЩЕНКОВ
-						.can-img(style="background-image: url(img/s-dogs-slider/slider-img/4_Schenki_Cypa.png)")
-						.lower-info-cont
-							span.taste-txt С ЦЫПЛЁНКОМ
-							span.info-txt 240г. 12 банок
-							.code-cont
-								img.code-img(src='img/s-dogs-slider/slider-img/code-img.png')
-								span.code-num 4606180018710
-					.swiper-slide(style='background-color: #ffe6f2;')
-						.recipe-cont
-							img.small-dog-img(src="img/s-dogs-slider/small-dog-blue.png")
-							h4.h4.recipe-txt РЕЦЕПТ ДЛЯ ЩЕНКОВ
-						.can-img(style="background-image: url(img/s-dogs-slider/slider-img/2.png)")
-						.lower-info-cont
-							span.taste-txt с телятиной и ПЕЧЕНЬЮ
-							span.info-txt 240г. 12 банок
-							.code-cont
-								img.code-img(src='img/s-dogs-slider/slider-img/code-img.png')
-								span.code-num 4606180018710
-					.swiper-slide(style='background-color: #ffdbdb;')
-						.recipe-cont.d-none
-							img.small-dog-img(src="img/s-dogs-slider/small-dog-blue.png")
-							h4.h4.recipe-txt РЕЦЕПТ ДЛЯ ЩЕНКОВ3
-						.can-img(style="background-image: url(img/s-dogs-slider/slider-img/3.png)")
-						.lower-info-cont
-							span.taste-txt с говядиной
-							span.info-txt 340г. 12 банок
-							.code-cont
-								img.code-img(src='img/s-dogs-slider/slider-img/code-img.png')
-								span.code-num 4606180018710
-					.swiper-slide(style='background-color: #ffdbdb;')
-						.recipe-cont.d-none
-							img.small-dog-img(src="img/s-dogs-slider/small-dog-blue.png")
-							h4.h4.recipe-txt РЕЦЕПТ ДЛЯ ЩЕНКОВ4
-						.can-img(style="background-image: url(img/s-dogs-slider/slider-img/4.png)")
-						.lower-info-cont
-							span.taste-txt с говядиной и гречкой
-							span.info-txt 340г. 12 банок
-							.code-cont
-								img.code-img(src='img/s-dogs-slider/slider-img/code-img.png')
+								img.code-img.swiper-lazy(src="#" data-src='img/@2x/code-img.png')
 								span.code-num 4606180018710
 

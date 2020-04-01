@@ -3,6 +3,7 @@
   font-family: $default-font;
   .place-for-address-contacts{
     text-transform: uppercase;
+    font-size: $main-headline-fs;
     color: #939393;
     font-weight: 700;
     display: flex;
@@ -56,6 +57,7 @@
           line-height: 2;
           font-weight: 700;
           transition: color .4s ease-in-out;
+          font-size: $footer-menu-item-link;
           &:hover{
             color: $footer-menu-item-hover-color;
             text-shadow: 0px 0px .3px $footer-menu-item-color;
@@ -77,10 +79,9 @@
   @include media-breakpoint-up(base-xl) {
     background-color: $footer-bg-color;
     margin-top: 110px;
-    font-family: $default-font;
     .place-for-address-contacts{
       text-transform: uppercase;
-      font-size: 54.5px;
+      //font-size: 54.5px;
       color: #939393;
       font-weight: 700;
       height: 570px;
@@ -177,13 +178,6 @@
               right: -20px;
             }
           }
-          .footer-menu-item-link{
-            text-decoration: none;
-            color: $footer-menu-item-color;
-            font-size: 37.5px;
-            line-height: 2;
-            font-weight: 700;
-          }
         }
       }
     }
@@ -191,7 +185,7 @@
   @include media-breakpoint-up(base-lg) {
     margin-top: 110px;
     .place-for-address-contacts{
-      font-size: 42.5px;
+      //font-size: 42.5px;
       height: 300px;
       .inner-txt{
         padding-right: 0px;
@@ -220,7 +214,7 @@
         padding-bottom: 50px;
         .footer-menu-item{
           .footer-menu-item-link{
-            font-size: 25px;
+            //font-size: 25px;
             word-spacing: 1px;
           }
         }
@@ -230,7 +224,7 @@
   @include media-breakpoint-up(xl) {
     margin-top: 50px;
     .place-for-address-contacts{
-      font-size: 32.5px;
+      //font-size: 32.5px;
       height: 300px;
       .inner-txt{
         padding-right: 0px;
@@ -260,7 +254,7 @@
         padding-bottom: 50px;
         .footer-menu-item{
           .footer-menu-item-link{
-            font-size: 25px;
+            //font-size: 25px;
             word-spacing: 1px;
           }
         }
@@ -270,7 +264,7 @@
   @include media-breakpoint-up(lg) {
     margin-top: 50px;
     .place-for-address-contacts{
-      font-size: 22.5px;
+      //font-size: 22.5px;
       height: 300px;
       .inner-txt{
         padding-right: 0px;
@@ -304,7 +298,7 @@
           padding: 0 10px;
           .footer-menu-item-link{
             text-align: left;
-            font-size: 20px;
+            //font-size: 20px;
             word-spacing: 1px;
           }
         }
@@ -314,7 +308,7 @@
   @include media-breakpoint-only(md) {
     margin-top: 50px;
     .place-for-address-contacts{
-      font-size: 22.5px;
+     // font-size: 22.5px;
       height: 300px;
       .inner-txt{
         padding-right: 0px;
@@ -347,7 +341,7 @@
           width: auto;
           padding-right: 15px;
           .footer-menu-item-link{
-            font-size: 16px;
+           // font-size: 16px;
             word-spacing: 1px;
             text-align: left;
           }
@@ -358,10 +352,11 @@
   @include media-breakpoint-only(sm) {
     margin-top: 50px;
     .place-for-address-contacts{
-      font-size: 22.5px;
+     // font-size: 22.5px;
       height: 300px;
       .inner-txt{
         padding-right: 0px;
+        text-align: center;
       }
     }
     .footer-logo-block{
@@ -387,16 +382,21 @@
       .footer-menu-list{
         padding-bottom: 50px;
         text-align: center;
+        padding-left: 7.5%;
         .footer-menu-item{
-          width: auto;
-          padding-right: 10px;
+          width: 50%;
           .footer-menu-item-link{
-            font-size: 15px;
             word-spacing: 1px;
-            text-align: left;
           }
-          &:last-child{
-            padding-right: 0px;
+          &:nth-child(1), &:nth-child(3){
+            .footer-menu-item-link {
+              text-align: left;
+            }
+          }
+          &:nth-child(2), &:nth-child(4){
+            .footer-menu-item-link {
+              text-align: left;
+            }
           }
         }
       }
@@ -405,7 +405,7 @@
   @include media-breakpoint-only(xs) {
     margin-top: 50px;
     .place-for-address-contacts{
-      font-size: 16px;
+     // font-size: 16px;
       height: 300px;
       text-align: center;
       .inner-txt{
@@ -442,7 +442,7 @@
           margin-bottom: 10px;
           background-color: #fdfeff;
           .footer-menu-item-link{
-            font-size: 15px;
+            //font-size: 15px;
             word-spacing: 1px;
             text-align: center;
             border: 1px solid #2642bc;

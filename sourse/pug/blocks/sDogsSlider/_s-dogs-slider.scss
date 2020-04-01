@@ -7,6 +7,7 @@
 		}
 		.advantage-title{
 			color: $home-advantage-headline-color;
+			font-size: $main-headline-fs;
 			line-height: 1;
 			padding: 5px 5px 0 0;
 			margin: 0;
@@ -82,23 +83,22 @@
 							top: 0;
 							left: 0;
 							width: 100%;
+
 							.small-dog-img{
 
 							}
 							.recipe-txt{
 								font-weight: 900;
 								color: $recipe-txt-col;
+								font-size: $dogs-slider-recipe-txt;
 								margin-top: 10px;
 								text-transform: uppercase;
 							}
 						}
 						.can-img{
-							position: absolute;
-							left: auto;
-							width: 100%;
-							background-repeat: no-repeat;
-							background-position: 50% 100%;
-							background-size: 100%; //?
+							margin: auto;
+							display: inline-block;
+							vertical-align: top;
 						}
 						.lower-info-cont{
 							position: absolute;
@@ -109,6 +109,7 @@
 								display: block;
 								width: 100%;
 								color: $taste-txt-col;
+								font-size: $taste-txt-fs;//0.93rem;
 								line-height: 1.05;
 								font-weight: 900;
 								text-transform: uppercase;
@@ -118,6 +119,7 @@
 								margin-top: 5px;
 								display: block;
 								color: $taste-txt-col;
+								font-size: $taste-txt-fs;
 							}
 							.code-cont{
 								margin-top: 55px;
@@ -136,6 +138,7 @@
 									line-height: 1;
 									font-family: $bebas-font;
 									font-weight: 700;
+									font-size: $dogs-slider-code-num-fs;
 								}
 							}
 						}
@@ -150,8 +153,7 @@
 				width: 100px;
 			}
 			.advantage-title{
-				color: $home-advantage-headline-color;
-				font-size: $h-font-size;
+				//font-size: $h-font-size;//
 				line-height: 1;
 				padding: 5px 5px 0 0;
 				margin: 0;
@@ -224,20 +226,20 @@
 								}
 								.recipe-txt{
 									font-weight: 900;
-									font-size: $em-base + 1px;
+									//font-size: $em-base + 1px;//
 									color: $recipe-txt-col;
 									margin-top: 10px;
 									text-transform: uppercase;
 								}
 							}
 							.can-img{
-								position: absolute;
-								left: auto;
-								width: 100%;
-								height: 600px;
-								background-repeat: no-repeat;
-								background-position: 50% 100%;
-								//background-size: 50%;
+								width: auto;
+								&.small-can{
+									margin-top: 260px;
+								}
+								&.big-can{
+									margin-top: 160px;
+								}
 							}
 							.lower-info-cont{
 								position: absolute;
@@ -248,7 +250,7 @@
 								.taste-txt{
 									display: block;
 									width: 100%;
-									font-size: $em-base * 0.93;
+									//font-size: $em-base * 0.93;//
 									color: $taste-txt-col;
 									line-height: 1;
 									font-weight: 900;
@@ -258,7 +260,7 @@
 									line-height: 1;
 									margin-top: 5px;
 									display: block;
-									font-size: 31px;
+									//font-size: 31px;//
 									color: $taste-txt-col;
 									//color: transparent;
 								}
@@ -277,7 +279,7 @@
 										vertical-align: top;
 										line-height: 1;
 										font-family: $bebas-font;
-										font-size: 38px;
+										//font-size: 38px;
 										font-weight: 700;
 										margin-top: -4px;
 									}
@@ -290,12 +292,11 @@
 		}
 		@include media-breakpoint-up(base-lg) {
 			padding-top: 100px;
-			$em-base: 25px;
 			.small-cat-and-dog{
 				width: auto;
 			}
 			.advantage-title{
-				font-size: 42.5px;
+				//font-size: 42.5px;
 			}
 			.slider-container{
 				width: 1500px;
@@ -319,31 +320,36 @@
 									width: 60px;
 								}
 								.recipe-txt{
-									font-size: 21px;
+									//font-size: 21px;
 									margin-top: 10px;
 								}
 							}
 							.can-img{
-								height: 350px;//
-								background-size: 50%;//
+								width: 50%;
+								&.small-can{
+									margin-top: 160px;
+								}
+								&.big-can{
+									margin-top: 100px;
+								}
 							}
 							.lower-info-cont{
 								height: 200px;
 								.taste-txt{
-									font-size: $em-base * 0.85;
+									//font-size: $em-base * 0.85;
 								}
 								.info-txt{
-									font-size: $em-base * 0.75;
+									//font-size: $em-base * 0.75;
 								}
 								.code-cont{
 									margin-top: 55px;
-									bottom: 85px;
+									bottom: 35px;
 									.code-img{
 										margin-right: 15px;
 										height: 23px;
 									}
 									.code-num{
-										font-size: 30px;
+										//font-size: 30px;
 										margin-top: -4px;
 									}
 								}
@@ -355,13 +361,12 @@
 		}
 		@include media-breakpoint-up(xl) {
 			padding-top: 30px;
-			$em-base: 18.75px;
 			.small-cat-and-dog{
 				width: 65px;
 				height: auto;
 			}
 			.advantage-title{
-				font-size: 32.5px;
+				//font-size: 32.5px;
 			}
 			.slider-container{
 				width: 1070px;
@@ -388,21 +393,26 @@
 									width: 45px;
 								}
 								.recipe-txt{
-									font-size: 18px;
+									//font-size: 18px;
 									margin-top: 10px;
 								}
 							}
 							.can-img{
-								height: 270px;//
-								background-size: 50%;//
+								width: 50%;
+								&.small-can{
+									margin-top: 140px;
+								}
+								&.big-can{
+									margin-top: 100px;
+								}
 							}
 							.lower-info-cont{
 								height: 150px;
 								.taste-txt{
-									font-size: $em-base * 0.85;
+									//font-size: $em-base * 0.85;
 								}
 								.info-txt{
-									font-size: $em-base * 0.75;
+									//font-size: $em-base * 0.75;
 								}
 								.code-cont{
 									margin-top: 55px;
@@ -411,8 +421,8 @@
 										height: 19px;
 									}
 									.code-num{
-										font-size: 24px;
-										margin-top: -2px;
+										//font-size: 24px;
+										margin-top: -1px;
 									}
 								}
 							}
@@ -423,13 +433,12 @@
 		}
 		@include media-breakpoint-up(lg) {
 			padding-top: 30px;
-			$em-base: 15.75px;
 			.small-cat-and-dog{
 				width: 65px;
 				height: auto;
 			}
 			.advantage-title{
-				font-size: 27.5px;
+				//font-size: 27.5px;
 			}
 			.slider-container{
 				width: 750px;
@@ -456,21 +465,26 @@
 									width: 40px;
 								}
 								.recipe-txt{
-									font-size: 17px;
+									//font-size: 17px;
 									margin-top: 10px;
 								}
 							}
 							.can-img{
-								height: 270px;//
-								background-size: 50%;//
+								width: 50%;
+								&.small-can{
+									margin-top: 140px;
+								}
+								&.big-can{
+									margin-top: 100px;
+								}
 							}
 							.lower-info-cont{
 								height: 150px;
 								.taste-txt{
-									font-size: $em-base * 0.95;
+									//font-size: $em-base * 0.95;
 								}
 								.info-txt{
-									font-size: $em-base * 0.89;
+									//font-size: $em-base * 0.89;
 								}
 								.code-cont{
 									margin-top: 55px;
@@ -479,8 +493,8 @@
 										height: 16px;
 									}
 									.code-num{
-										font-size: 20px;
-										margin-top: -2px;
+										//font-size: 20px;
+										margin-top: 0px;
 									}
 								}
 							}
@@ -491,13 +505,12 @@
 		}
 		@include media-breakpoint-only(md) {
 			padding-top: 30px;
-			$em-base: 15.75px;
 			.small-cat-and-dog{
 				width: 65px;
 				height: auto;
 			}
 			.advantage-title{
-				font-size: 27.5px;
+				//font-size: 27.5px;
 			}
 			.slider-container{
 				width: 100%;
@@ -527,31 +540,38 @@
 									width: 40px;
 								}
 								.recipe-txt{
-									font-size: 17px;
+									//font-size: 17px;
 									margin-top: 10px;
 								}
 							}
 							.can-img{
-								height: 270px;//
-								background-size: 50%;//
+								width: 50%;
+								max-width: 125px;
+								&.small-can{
+									margin-top: 140px;
+								}
+								&.big-can{
+									margin-top: 90px;
+								}
 							}
 							.lower-info-cont{
 								height: 150px;
 								.taste-txt{
-									font-size: $em-base * 0.95;
+									//font-size: $em-base * 0.95;
 								}
 								.info-txt{
-									font-size: $em-base * 0.89;
+									//font-size: $em-base * 0.89;
 								}
 								.code-cont{
 									margin-top: 55px;
+									bottom: 25px;
 									.code-img{
 										margin-right: 15px;
 										height: 16px;
 									}
 									.code-num{
-										font-size: 20px;
-										margin-top: -2px;
+										//font-size: 20px;
+										margin-top: 0px;
 									}
 								}
 							}
@@ -562,13 +582,12 @@
 		}
 		@include media-breakpoint-only(sm) {
 			padding-top: 30px;
-			$em-base: 15.75px;
 			.small-cat-and-dog{
 				width: 55px;
 				height: auto;
 			}
 			.advantage-title{
-				font-size: 26px;
+				//font-size: 26px;
 			}
 			.slider-container{
 				width: 100%;
@@ -598,32 +617,37 @@
 									width: 40px;
 								}
 								.recipe-txt{
-									font-size: 17px;
+									//font-size: 17px;
 									margin-top: 10px;
 								}
 							}
 							.can-img{
-								height: 300px;//
-								background-size: 50%;//
+								width: 50%;
+								&.small-can{
+									margin-top: 110px;
+								}
+								&.big-can{
+									margin-top: 60px;
+								}
 							}
 							.lower-info-cont{
 								height: 110px;
 								.taste-txt{
-									font-size: $em-base * 0.95;
+									//font-size: $em-base * 0.95;
 								}
 								.info-txt{
-									font-size: $em-base * 0.89;
+									//font-size: $em-base * 0.89;
 								}
 								.code-cont{
 									margin-top: 25px;
-									bottom: -10px;
+									bottom: 10px;
 									.code-img{
 										margin-right: 15px;
 										height: 16px;
 									}
 									.code-num{
-										font-size: 20px;
-										margin-top: -2px;
+										//font-size: 20px;
+										margin-top: 0px;
 									}
 								}
 							}
@@ -634,13 +658,12 @@
 		}
 		@include media-breakpoint-only(xs) {
 			padding-top: 0px;
-			$em-base: 15.75px;
 			.small-cat-and-dog{
 				width: 55px;
 				height: auto;
 			}
 			.advantage-title{
-				font-size: 22.7px;
+				//font-size: 22.7px;
 			}
 			.slider-container{
 				width: 100%;
@@ -670,34 +693,40 @@
 									width: 40px;
 								}
 								.recipe-txt{
-									font-size: 17px;
+									//font-size: 17px;
 									margin-top: 10px;
 								}
 							}
 							.can-img{
-								height: 200px;//
-								top: 100px;
-								//background-size: 50%;//
-								background-size: contain;
+								width: 50%;
+								height: auto;
+								&.small-can{
+									margin-top: 110px;
+									max-width: 200px;
+								}
+								&.big-can{
+									margin-top: 50px;
+									max-width: 180px;
+								}
 							}
 							.lower-info-cont{
 								height: 110px;
 								.taste-txt{
-									font-size: $em-base * 0.95;
+									//font-size: $em-base * 0.95;
 								}
 								.info-txt{
-									font-size: $em-base * 0.89;
+									//font-size: $em-base * 0.89;
 								}
 								.code-cont{
 									margin-top: 25px;
-									bottom: 0px;
+									bottom: 10px;
 									.code-img{
 										margin-right: 15px;
 										height: 16px;
 									}
 									.code-num{
-										font-size: 20px;
-										margin-top: -2px;
+										//font-size: 20px;
+										margin-top: 0px;
 									}
 								}
 							}

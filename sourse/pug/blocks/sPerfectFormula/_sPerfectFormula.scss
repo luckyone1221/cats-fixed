@@ -1,8 +1,8 @@
 
 	// start .sContact
 	.s-perfect-formula {
-		font-family: $default-font;
 		.s-headline{
+			font-size: $main-headline-fs;
 			font-weight: 900;
 			color: $h-color;
 			line-height: 1;
@@ -11,9 +11,11 @@
 			text-align: center;
 		}
 		.class-headline-description{
+			font-size: $headline-description-fs;
 			font-weight: 400;
 			color: $h-color;
 			text-align: center;
+			padding-bottom: 5.22rem;
 		}
 		.component-pills{
 			.component-pill-item{
@@ -23,11 +25,14 @@
 					border-radius: 50%;
 					position: static;
 					margin: auto;
+					.component-img{
+						max-width: 100%;
+					}
 				}
 				.component-descr{
 					font-weight: 900;
 					color: $h-color;
-
+					font-size: $component-description-fs;
 					padding: 0;
 					position: static;
 					margin-left: auto;
@@ -37,9 +42,8 @@
 		}
 	@include media-breakpoint-up(base-xl) {
 		margin-top: 145px;
-		font-family: $default-font;
 		.s-headline{
-			font-size: 54.5px;
+			//font-size: 54.5px;
 			font-weight: 900;
 			color: $h-color;
 			line-height: 1;
@@ -48,16 +52,13 @@
 			word-spacing: 0.8px;
 		}
 		.class-headline-description{
-			font-size: 30.5px;
+			//font-size: 30.5px;
 			font-weight: 400;
 			color: $h-color;
 			line-height: 50px;
-			margin-top: 35px;
+			margin-top: 25px;
 		}
 		.component-pills{
-			//height: 200px;
-			//background-color: red;
-			margin-top: 200px;
 			.component-pill-item{
 				text-align: center;
 				.img-container{
@@ -67,7 +68,7 @@
 					border-radius: 50%;
 				}
 				.component-descr{
-					font-size: 41.5px;
+					//font-size: 41.5px;
 					font-weight: 900;
 					color: $h-color;
 					line-height: 50px;
@@ -155,28 +156,25 @@
 		@include media-breakpoint-up(base-lg) {
 			margin-top: 100px;
 			.s-headline{
-				font-size: 42.5px;
+				//font-size: 42.5px;
 				padding-right: 0;
 			}
 			.class-headline-description{
-				font-size: 24.5px;
+				//font-size: 24.5px;
 				line-height: 50px;
 				margin-top: 35px;
 			}
 			.component-pills{
-				margin-top: 200px;
+				//margin-top: 200px;
 				.component-pill-item{
 					.img-container{
 						width: 200px;
 						height: 200px;
 						position: static;
 						margin: auto;
-						.component-img{
-							width: 100%;
-						}
 					}
 					.component-descr{
-						font-size: 25.5px;
+						//font-size: 25.5px;
 						line-height: 50px;
 						margin-top: 55px;
 					}
@@ -186,28 +184,25 @@
 		@include media-breakpoint-up(xl) {
 			margin-top: 50px;
 			.s-headline{
-				font-size: 32.5px;
+				//font-size: 32.5px;
 				padding-right: 0;
 			}
 			.class-headline-description{
-				font-size: 20px;
+				//font-size: 20px;
 				line-height: 1.5;
 				margin-top: 1em;
 			}
 			.component-pills{
-				margin-top: 75px;
+				//margin-top: 75px;
 				.component-pill-item{
 					.img-container{
 						width: 180px;
 						height: 180px;
 						position: static;
 						margin: auto;
-						.component-img{
-							width: 100%;
-						}
 					}
 					.component-descr{
-						font-size: 18px;
+						//font-size: 18px;
 						line-height: 1.5;
 						margin-top: 25px;
 					}
@@ -217,28 +212,25 @@
 		@include media-breakpoint-up(lg) {
 			margin-top: 50px;
 			.s-headline{
-				font-size: 27.5px;
+				//font-size: 27.5px;
 				padding-right: 0px;
 			}
 			.class-headline-description{
-				font-size: 17px;
+				//font-size: 17px;
 				line-height: 1.5;
 				margin-top: 1em;
 			}
 			.component-pills{
-				margin-top: 50px;
+				//margin-top: 50px;
 				.component-pill-item{
 					.img-container{
 						width: 140px;
 						height: 140px;
 						position: static;
 						margin: auto;
-						.component-img{
-							width: 100%;
-						}
 					}
 					.component-descr{
-						font-size: 16px;
+						//font-size: 16px;
 						line-height: 1.5;
 						margin-top: 25px;
 					}
@@ -248,16 +240,16 @@
 		@include media-breakpoint-up(md) {
 			margin-top: 50px;
 			.s-headline{
-				font-size: 27.5px;
+				//font-size: 27.5px;
 				padding-right: 0px;
 			}
 			.class-headline-description{
-				font-size: 16px;
+				//font-size: 16px;
 				line-height: 1.5;
 				margin-top: 1em;
 			}
 			.component-pills{
-				margin-top: 50px;
+				//margin-top: 50px;
 				text-align: center;
 				.component-pill-item{
 					display: inline-block;
@@ -274,12 +266,9 @@
 						height: 140px;
 						position: static;
 						margin: auto;
-						.component-img{
-							width: 100%;
-						}
 					}
 					.component-descr{
-						font-size: 16px;
+						//font-size: 16px;
 						line-height: 1.5;
 						margin-top: 25px;
 					}
@@ -289,16 +278,16 @@
 		@include media-breakpoint-up(sm) {
 			margin-top: 50px;
 			.s-headline{
-				font-size: 24px;
+				//font-size: 24px;
 				padding-right: 0px;
 			}
 			.class-headline-description{
-				font-size: 14px;
+				//font-size: 14px;
 				line-height: 1.5;
 				margin-top: 1em;
 			}
 			.component-pills{
-				margin-top: 50px;
+				//margin-top: 50px;
 				text-align: center;
 				.component-pill-item{
 					display: inline-block;
@@ -315,12 +304,9 @@
 						height: 140px;
 						position: static;
 						margin: auto;
-						.component-img{
-							width: 100%;
-						}
 					}
 					.component-descr{
-						font-size: 16px;
+						//font-size: 16px;
 						line-height: 1.5;
 						margin-top: 25px;
 					}
@@ -330,18 +316,18 @@
 		@include media-breakpoint-only(xs) {
 			margin-top: 0px;
 			.s-headline{
-				font-size: 22px;
+				//font-size: 22px;
 				padding-right: 0px;
 				text-align: left;
 			}
 			.class-headline-description{
 				text-align: left;
-				font-size: 14px;
+				//font-size: 14px;
 				line-height: 1.5;
 				margin-top: 1em;
 			}
 			.component-pills{
-				margin-top: 50px;
+				//margin-top: 50px;
 				text-align: center;
 				.component-pill-item{
 					display: inline-block;
@@ -359,14 +345,14 @@
 						height: 130px;
 						position: static;
 						margin: auto;
-						.component-img{
-							width: 100%;
-						}
 					}
 					.component-descr{
-						font-size: 13.5px;
+						//font-size: 13.5px;
 						line-height: 1.5;
 						margin-top: 10px;
+						width: 80%;
+						margin-left: auto;
+						margin-right: auto;
 					}
 				}
 			}

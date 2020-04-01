@@ -5,33 +5,28 @@ mixin header()
 		.container
 			header.home-header
 				a(href="#").logo-link
-					img(src='img/header-img/logo.png')
+					img(src='img/@2x/logo.png')
 				nav.header-menu.d-none.d-lg-block
 					ul
 						li
-							a(href='#') Корма для собак
+							a.ancor-js(href='#s-dogs-slider') Корма для собак
 						li
-							a(href='#') Корма для кошек
+							a.ancor-js(href='#s-cats-slider') Корма для кошек
 						li
-							a(href='#') Идеальная формула
+							a.ancor-js(href='#s-perfect-formula') Идеальная формула
 						li
-							a(href='#') Контакты
+							a.ancor-js(href='.footer') Контакты
 			.header-title
-				img.header-title-img(src='img/header-img/cats-and-dogs-every-sort.png')
+				img.header-title-img(src='img/@2x/cats-and-dogs-every-sort.png')
 				h1.header-title-headline
 					| Лучшее
-					br
-					| от природы
-					br
-					|для любимых
-					br
+					|от&nbsp;природы
+					|для&nbsp;любимых
 					|друзей.
 				p.header-title-txt
 					|В Natural Balance мы предлагаем
-					br
-					|только премиальный, рекомендованный
-					br
+					|только&nbsp;премиальный,&nbsp;рекомендованный
 					|ветеринарами корм для собак и кошек
-			.header-img-banner(style="background-image: url(img/header-img/cat-and-dog-img.png)")
-				.img-quality-mark(style="background-image: url(img/header-img/quality-mark.png)")
+			.header-img-banner(style="background-image: url(img/@2x/cat-and-dog-img.png)")
+				.img-quality-mark(style="background-image: url(img/@2x/quality-mark.png)")
 // end header

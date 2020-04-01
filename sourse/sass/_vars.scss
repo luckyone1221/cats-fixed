@@ -476,30 +476,63 @@ $custom-file-text: (
   en: "Browse"
 ) !default;
 
+//custom vars
+$main-headline-fs: 1.63rem;// rem(30px)
 
 //header vars
 
 $home-header-bg-color: #1c4883;
 $home-header-color: white;
 
+$header-inner-link-fs: 1.16rem;
+$header-title-headline-fs: 3.25rem;
+$header-title-txt-fs: 1rem;
+
 // advantage vars
 $home-advantage-headline-color: #444545;
-$h-font-size: 1.62 * $em-base;
 $h-color: #444545;
 $convince-bg-color: #e8f6fe;
 
-//dogs-slider
+$convince-txt-headline: 1.74rem;
+$pill-description-fs: 1rem;
+$convince-txt--par-fs: 1rem;
+
+//dogs-slider, and cats too
 $recipe-txt-col: #3e4a7b;
 $taste-txt-col: #0d0f10;
 $controlls-col: #404040;
 
+$dogs-slider-recipe-txt: 1.05rem;
+$taste-txt-fs: 0.93rem;
+$dogs-slider-code-num-fs: 1.13rem;
+
+$cats-slider-recipe-txt: 1rem;
+$cats-txt-fs: 0.9rem;
+$cats-slider-code-num-fs: 1.15rem;
+
+//important-chems-dogs
+
+$chems-dogs-description-part: 1 rem;
+$elipse-inner-txt-fs: 1.13rem;
+
+//important-chems-cats
+
+$cats-chems-dogs-description-part: 1 rem;
+$cats-elipse-inner-txt-fs: 1.15rem;
+
+
 //components vars
 $component-img-cont-color: #f3f4f3;
+
+$headline-description-fs: 0.91rem;
+$component-description-fs: calc(1.47rem - 8px);
 
 //footer vars
 $footer-bg-color: #e8f7fe;
 $footer-menu-item-color: #43518d;
 $footer-menu-item-hover-color: #2344d5;
+
+$footer-menu-item-link: 1.2rem;
 
 
 

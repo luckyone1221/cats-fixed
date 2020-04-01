@@ -9,9 +9,13 @@
 					line-height: 1.063;
 					font-weight: 900;
 					color: $home-advantage-headline-color;
+					font-size: $main-headline-fs;
+					padding-top: 0.33rem;
 				}
 				.descr-par{
 					line-height: 1.5;
+					font-size: $chems-dogs-description-part;
+					padding-top: 0.33rem;
 				}
 				.pet-img-container{
 					.pet-item{
@@ -28,6 +32,7 @@
 							line-height: 1.2;
 							text-transform: uppercase;
 							font-weight: 900;
+							font-size: $elipse-inner-txt-fs;
 						}
 					}
 				}
@@ -44,12 +49,12 @@
 						line-height: 1.063;
 						font-weight: 900;
 						color: $home-advantage-headline-color;
-						font-size: 54.5px;
+						//font-size: 54.5px;//
 					}
 					.descr-par{
 						width: 63.5%;
-						margin-top: 29px;
-						font-size: $em-base;
+						//margin-top: 29px;
+						//font-size: $em-base;//
 						line-height: 50px;
 					}
 					.pet-img-container{
@@ -70,7 +75,7 @@
 							.inner-txt{
 								text-align: center;
 								margin: auto;
-								font-size: 38px;
+								//font-size: 38px;
 								color: white;
 								line-height: 1.2;
 								text-transform: uppercase;
@@ -92,18 +97,18 @@
 		}
 		@include media-breakpoint-up(base-lg) {
 			margin-top: 150px;
-			$em-base: 27px;
+			//$em-base: 27px;
 			.row{
 				.pet-and-text{
 					padding-left: 6.7%;
 					.pet-txt-headline{
 						width: 80.5%;
-						font-size: 42.5px;
+						//font-size: 42.5px;
 					}
 					.descr-par{
 						width: 80.5%;
-						margin-top: 29px;
-						font-size: $em-base;
+						//margin-top: 29px;
+						//font-size: $em-base;
 					}
 					.pet-img-container{
 						.pet-item{
@@ -115,10 +120,10 @@
 						.elipse{
 							left: 60%;
 							top: 45%;
-							width: 240px;
-							height: 240px;
+							width: 260px;
+							height: 260px;
 							.inner-txt{
-								font-size: $em-base - 1px;
+								//font-size: $em-base - 1px;
 							}
 						}
 					}
@@ -136,18 +141,18 @@
 		}
 		@include media-breakpoint-up(xl) {
 			margin-top: 150px;
-			$em-base: 20px;
+			//$em-base: 20px;
 			.row{
 				.pet-and-text{
 					padding-left: 6.7%;
 					.pet-txt-headline{
 						width: 80.5%;
-						font-size: 32.5px;
+						//font-size: 32.5px;
 					}
 					.descr-par{
 						width: 78.5%;
-						margin-top: 29px;
-						font-size: $em-base + 0px;
+						//margin-top: 29px;
+						//font-size: $em-base + 0px;
 					}
 					.pet-img-container{
 						.pet-item{
@@ -162,7 +167,7 @@
 							width: 200px;
 							height: 200px;
 							.inner-txt{
-								font-size: $em-base - 1px;
+								//font-size: $em-base - 1px;
 							}
 						}
 					}
@@ -180,18 +185,18 @@
 		}
 		@include media-breakpoint-only(lg) {
 			margin-top: 75px;
-			$em-base: 18px;
+			//$em-base: 18px;
 			.row{
 				.pet-and-text{
 					padding-left: 6.7%;
 					.pet-txt-headline{
 						width: 80.5%;
-						font-size: 27.5px;
+						//font-size: 27.5px;
 					}
 					.descr-par{
 						width: 78.5%;
-						margin-top: 29px;
-						font-size: $em-base - 1px;
+						//margin-top: 29px;
+						//font-size: $em-base - 1px;
 					}
 					.pet-img-container{
 						.pet-item{
@@ -203,10 +208,10 @@
 						.elipse{
 							left: 60%;
 							top: 45%;
-							width: 140px;
-							height: 140px;
+							width: 160px;
+							height: 160px;
 							.inner-txt{
-								font-size: $em-base - 2px;
+								//font-size: $em-base - 2px;
 							}
 						}
 					}
@@ -224,19 +229,19 @@
 		}
 		@include media-breakpoint-only(md) {
 			margin-top: 50px;
-			$em-base: 17px;
+			//$em-base: 17px;
 			.row{
 				position: relative;
 				.pet-and-text{
 					padding-left: 15px;
 					.pet-txt-headline{
 						width: 50.5%;
-						font-size: 27.5px;
+						//font-size: 27.5px;
 					}
 					.descr-par{
 						width: 47.5%;
-						margin-top: 20px;
-						font-size: $em-base ;
+						//margin-top: 20px;
+						//font-size: $em-base ;
 					}
 					.pet-img-container{
 						.pet-item{
@@ -247,12 +252,12 @@
 						}
 						.elipse{
 							z-index: 10;
-							left: 40%;
+							left: 35%;
 							top: 45%;
-							width: 140px;
-							height: 140px;
+							width: 150px;
+							height: 150px;
 							.inner-txt{
-								font-size: $em-base - 2px;
+								//font-size: $em-base - 2px;
 							}
 						}
 					}
@@ -275,19 +280,19 @@
 		}
 		@include media-breakpoint-only(sm) {
 			margin-top: 50px;
-			$em-base: 14px;
+			//$em-base: 14px;
 			.row{
 				position: relative;
 				.pet-and-text{
 					padding-left: 15px;
 					.pet-txt-headline{
 						width: 55.5%;
-						font-size: 24px;
+						//font-size: 24px;
 					}
 					.descr-par{
 						width: 47.5%;
-						margin-top: 15px;
-						font-size: $em-base ;
+						//margin-top: 15px;
+						//font-size: $em-base ;
 					}
 					.pet-img-container{
 						.pet-item{
@@ -298,12 +303,12 @@
 						}
 						.elipse{
 							z-index: 10;
-							left: 35%;
+							left: 32%;
 							top: 50%;
-							width: 110px;
-							height: 110px;
+							width: 150px;
+							height: 150px;
 							.inner-txt{
-								font-size: $em-base - 2px;
+								//font-size: $em-base - 2px;
 							}
 						}
 					}
@@ -325,8 +330,8 @@
 			}
 		}
 		@include media-breakpoint-only(xs) {
-			margin-top: 0px;
-			$em-base: 14px;
+			margin-top: 25px;
+			//$em-base: 14px;
 			.row{
 				position: relative;
 				.pet-and-text{
@@ -334,13 +339,13 @@
 					.pet-txt-headline{
 						width: 100%;
 						max-width: 260px;
-						font-size: 22px;
+						//font-size: 22px;
 					}
 					.descr-par{
 						width: 100%;
 						max-width: 260px;
-						margin-top: 15px;
-						font-size: $em-base;
+						//margin-top: 15px;
+						//font-size: $em-base;
 					}
 					.pet-img-container{
 						.pet-item{
@@ -352,12 +357,13 @@
 						}
 						.elipse{
 							z-index: 10;
-							left: 200px;
-							top: 50%;
-							width: 110px;
-							height: 110px;
+							left: 190px;
+							top: 45%;
+							width: 130px;
+							height: 130px;
+							transform: scale(.75);
 							.inner-txt{
-								font-size: $em-base - 1px;
+								//font-size: $em-base - 1px;
 							}
 						}
 					}
