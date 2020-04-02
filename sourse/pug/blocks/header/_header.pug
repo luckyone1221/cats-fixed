@@ -2,20 +2,26 @@
 mixin header()
 	// start header
 	+b.SECTION.header.section#header&attributes(attributes)
+		header.home-header
+			.container
+				.row
+					.col-auto
+						a(href="#").logo-link
+							img(src='img/@2x/logo.png')
+					.col.d-none.d-lg-block
+							ul
+								li
+									a.ancor-js(href='#s-dogs-slider') Корма для собак
+								li
+									a.ancor-js(href='#s-cats-slider') Корма для кошек
+								li
+									a.ancor-js(href='#s-perfect-formula') Идеальная формула
+								li
+									a.ancor-js(href='.footer') Контакты
+					.col-auto.d-lg-none
+						+b.toggle-menu-mobile--js.d-lg-none
+							span
 		.container
-			header.home-header
-				a(href="#").logo-link
-					img(src='img/@2x/logo.png')
-				nav.header-menu.d-none.d-lg-block
-					ul.header-menu_items-list
-						li.header-menu_items-list_item
-							a.header-menu_items-list_item_inner-link.ancor-js(href='#s-dogs-slider') Корма для собак
-						li.header-menu_items-list_item
-							a.header-menu_items-list_item_inner-link.ancor-js(href='#s-cats-slider') Корма для кошек
-						li.header-menu_items-list_item
-							a.header-menu_items-list_item_inner-link.ancor-js(href='#s-perfect-formula') Идеальная формула
-						li.header-menu_items-list_item
-							a.header-menu_items-list_item_inner-link.ancor-js(href='.footer') Контакты
 			.header-title
 				img.header-title-img(src='img/@2x/cats-and-dogs-every-sort.png')
 				h1.header-title-headline
