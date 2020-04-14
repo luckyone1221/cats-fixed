@@ -3,7 +3,7 @@
 	.s-cats-slider {
 		text-align: center;
 		.small-cat-and-dog{
-			width: auto;
+			@extend .section-icon;
 		}
 		.advantage-title{
 			font-size: $main-headline-fs;
@@ -146,9 +146,6 @@
 		@include media-breakpoint-up(base-xl) {
 			text-align: center;
 			padding-top: 25px;
-			.small-cat-and-dog{
-				width: 100px;
-			}
 			.advantage-title{
 				color: $home-advantage-headline-color;
 				//font-size: $h-font-size;//
@@ -296,9 +293,6 @@
 		}
 		@include media-breakpoint-up(base-lg) {
 			padding-top: 100px;
-			.small-cat-and-dog{
-				width: auto;
-			}
 			.advantage-title{
 				//font-size: 42.5px;
 			}
@@ -366,10 +360,6 @@
 		@include media-breakpoint-up(xl) {
 			padding-top: 30px;
 			$em-base: 18.75px;
-			.small-cat-and-dog{
-				width: 65px;
-				height: auto;
-			}
 			.advantage-title{
 				//font-size: 32.5px;
 			}
@@ -439,10 +429,6 @@
 		@include media-breakpoint-up(lg) {
 			padding-top: 30px;
 			$em-base: 15.75px;
-			.small-cat-and-dog{
-				width: 65px;
-				height: auto;
-			}
 			.advantage-title{
 				//font-size: 27.5px;
 			}
@@ -512,10 +498,6 @@
 		@include media-breakpoint-only(md) {
 			padding-top: 30px;
 			$em-base: 15.75px;
-			.small-cat-and-dog{
-				width: 65px;
-				height: auto;
-			}
 			.advantage-title{
 				//font-size: 27.5px;
 			}
@@ -590,10 +572,6 @@
 		@include media-breakpoint-only(sm) {
 			padding-top: 30px;
 			$em-base: 15.75px;
-			.small-cat-and-dog{
-				width: 55px;
-				height: auto;
-			}
 			.advantage-title{
 				//font-size: 26px;
 			}
@@ -668,10 +646,6 @@
 		@include media-breakpoint-only(xs) {
 			padding-top: 0px;
 			$em-base: 15.75px;
-			.small-cat-and-dog{
-				width: 55px;
-				height: auto;
-			}
 			.advantage-title{
 				//font-size: 22.7px;
 			}

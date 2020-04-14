@@ -69,6 +69,7 @@
 				}
 				.component-descr{
 					//font-size: 41.5px;
+					font-size: $component-description-fs;
 					font-weight: 900;
 					color: $h-color;
 					line-height: 50px;
@@ -174,14 +175,15 @@
 						margin: auto;
 					}
 					.component-descr{
-						//font-size: 25.5px;
+						font-size: 22.5px;
+						//font-size: $component-description-fs;
 						line-height: 50px;
 						margin-top: 55px;
 					}
 				}
 			}
 		}
-		@include media-breakpoint-up(xl) {
+		@include media-breakpoint-up(xxl) {
 			margin-top: 50px;
 			.s-headline{
 				//font-size: 32.5px;
@@ -191,6 +193,7 @@
 				//font-size: 20px;
 				line-height: 1.5;
 				margin-top: 1em;
+				padding-bottom: 5.22rem;
 			}
 			.component-pills{
 				//margin-top: 75px;
@@ -219,6 +222,7 @@
 				//font-size: 17px;
 				line-height: 1.5;
 				margin-top: 1em;
+				padding-bottom: 1.75rem;
 			}
 			.component-pills{
 				//margin-top: 50px;
@@ -232,7 +236,7 @@
 					.component-descr{
 						//font-size: 16px;
 						line-height: 1.5;
-						margin-top: 25px;
+						margin-top: 10px;
 					}
 				}
 			}
@@ -381,3 +385,62 @@
 	@include media-breakpoint-down(xs) {} 
 
 } // end.sContact
+
+/*
+@include media-breakpoint-up(xl) {
+			margin-top: 50px;
+			.s-headline{
+				//font-size: 32.5px;
+				padding-right: 0;
+			}
+			.class-headline-description{
+				//font-size: 20px;
+				line-height: 1.5;
+				margin-top: 1em;
+			}
+			.component-pills{
+				//margin-top: 75px;
+				.component-pill-item{
+					.img-container{
+						width: 180px;
+						height: 180px;
+						position: static;
+						margin: auto;
+					}
+					.component-descr{
+						//font-size: 18px;
+						line-height: 1.5;
+						margin-top: 25px;
+					}
+				}
+			}
+		}
+		@include media-breakpoint-up(lg) {
+			margin-top: 50px;
+			.s-headline{
+				//font-size: 27.5px;
+				padding-right: 0px;
+			}
+			.class-headline-description{
+				//font-size: 17px;
+				line-height: 1.5;
+				margin-top: 1em;
+			}
+			.component-pills{
+				//margin-top: 50px;
+				.component-pill-item{
+					.img-container{
+						width: 140px;
+						height: 140px;
+						position: static;
+						margin: auto;
+					}
+					.component-descr{
+						//font-size: 16px;
+						line-height: 1.5;
+						margin-top: 25px;
+					}
+				}
+			}
+		}
+*/

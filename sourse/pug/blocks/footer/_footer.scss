@@ -6,24 +6,33 @@
     font-size: $main-headline-fs;
     color: #939393;
     font-weight: 700;
-    display: flex;
+    //display: flex;
+    display: none !important;
     .inner-txt{
       margin: auto;
     }
   }
   .footer-logo-block{
+    padding-top: rem(70px);
     text-align: center;
     .small-cat-and-dog{
       display: block;
       margin-left: auto;
       margin-right: auto;
       position: relative;
+
+      width: rem(90px);
+      margin-top: rem(52px);
     }
     .footer-logo{
       display: block;
       margin-left: auto;
       margin-right: auto;
       position: relative;
+
+      width: rem(417px);
+      height: auto;
+      margin-top: rem(22px);
     }
     .footer-logo-txt{
       display: block;
@@ -32,6 +41,8 @@
       font-weight: 700;
       text-transform: uppercase;
       position: relative;
+
+      font-size: rem(24px);
     }
   }
   .footer-menu{
@@ -92,14 +103,14 @@
       }
     }
     .footer-logo-block{
-      height: 230px;
+      //height: 230px;
       text-align: center;
       .small-cat-and-dog{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 90px;
-        margin-top: 52px;
+        //width: rem(90px);
+        //margin-top: rem(52px);
         position: relative;
         left: -18px;
       }
@@ -108,9 +119,9 @@
         margin-left: auto;
         margin-right: auto;
         position: relative;
-        margin-top: 22px;
+        //margin-top: rem(22px);
         left: -10px;
-        width: auto;
+        //width: auto;
       }
       .footer-logo-txt{
         display: block;
@@ -118,7 +129,7 @@
         color: #3f4345;
         font-weight: 700;
         text-transform: uppercase;
-        font-size: 24px;
+        //font-size: rem(24px);
         position: relative;
         left: -4px;
         top: 9px;
@@ -192,18 +203,18 @@
       }
     }
     .footer-logo-block{
-      height: 230px;
+      //height: 230px;
       .small-cat-and-dog{
-        width: 90px;
-        margin-top: 52px;
+        //width: 90px;
+        //margin-top: 52px;
         left: -18px;
       }
       .footer-logo{
-        margin-top: 22px;
+        //margin-top: 22px;
         left: -10px;
       }
       .footer-logo-txt{
-        font-size: 24px;
+        //font-size: 24px;//13
         left: -4px;
         top: 9px;
       }
@@ -221,7 +232,7 @@
       }
     }
   }
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(xxl) {
     margin-top: 50px;
     .place-for-address-contacts{
       //font-size: 32.5px;
@@ -233,17 +244,17 @@
     .footer-logo-block{
       height: auto;
       .small-cat-and-dog{
-        width: 45px;
-        margin-top: 26px;
+        //width: 45px;
+        //margin-top: 26px;
         left: -9px;
       }
       .footer-logo{
-        width: 208.5px;
-        margin-top: 11px;
+        //width: 208.5px;
+        //margin-top: 11px;
         left: -5px;
       }
       .footer-logo-txt{
-        font-size: 12px;
+        //font-size: 12px;
         left: -4px;
         top: 9px;
       }
@@ -262,7 +273,7 @@
     }
   }
   @include media-breakpoint-up(lg) {
-    margin-top: 50px;
+    margin-top: 10px;
     .place-for-address-contacts{
       //font-size: 22.5px;
       height: 300px;
@@ -273,17 +284,17 @@
     .footer-logo-block{
       height: auto;
       .small-cat-and-dog{
-        width: 45px;
-        margin-top: 26px;
+        //width: 45px;
+        //margin-top: 26px;
         left: -9px;
       }
       .footer-logo{
-        width: 208.5px;
-        margin-top: 11px;
+        //width: 208.5px;
+        //margin-top: 11px;
         left: -5px;
       }
       .footer-logo-txt{
-        font-size: 12px;
+        //font-size: 12px;
         left: -4px;
         top: 9px;
       }
@@ -291,7 +302,7 @@
     .footer-menu{
       margin-top: 50px;
       .footer-menu-list{
-        padding-bottom: 50px;
+        padding-bottom: 25px;
         text-align: center;
         .footer-menu-item{
           width: auto;
@@ -317,17 +328,17 @@
     .footer-logo-block{
       height: auto;
       .small-cat-and-dog{
-        width: 45px;
-        margin-top: 26px;
+       // width: 45px;
+       // margin-top: 26px;
         left: -9px;
       }
       .footer-logo{
-        width: 208.5px;
-        margin-top: 11px;
+        //width: 208.5px;
+        //margin-top: 11px;
         left: -5px;
       }
       .footer-logo-txt{
-        font-size: 12px;
+        //font-size: 12px;
         left: -4px;
         top: 9px;
       }
@@ -362,17 +373,17 @@
     .footer-logo-block{
       height: auto;
       .small-cat-and-dog{
-        width: 45px;
-        margin-top: 26px;
+       // width: 45px;
+        //margin-top: 26px;
         left: -9px;
       }
       .footer-logo{
-        width: 208.5px;
-        margin-top: 11px;
+        //width: 208.5px;
+       // margin-top: 11px;
         left: -5px;
       }
       .footer-logo-txt{
-        font-size: 12px;
+        //font-size: 12px;
         left: -4px;
         top: 9px;
       }
@@ -415,17 +426,17 @@
     .footer-logo-block{
       height: auto;
       .small-cat-and-dog{
-        width: 45px;
-        margin-top: 26px;
+        //width: 45px;
+        //margin-top: 26px;
         left: -9px;
       }
       .footer-logo{
-        width: 208.5px;
-        margin-top: 11px;
+        //width: 208.5px;
+        //margin-top: 11px;
         left: -5px;
       }
       .footer-logo-txt{
-        font-size: 12px;
+        //font-size: 12px;
         left: -4px;
         top: 9px;
       }

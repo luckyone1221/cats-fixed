@@ -3,7 +3,8 @@
 	.s-dogs-slider {
 		text-align: center;
 		.small-cat-and-dog{
-			width: auto;
+			//@extend .section-icon-dog;
+			@extend .section-icon;
 		}
 		.advantage-title{
 			color: $home-advantage-headline-color;
@@ -77,6 +78,9 @@
 					.swiper-slide{
 						position: relative;
 						text-align: center;
+						display: flex;
+						justify-content: center;
+						padding: rem(25) rem(25) rem(95) rem(25) ;
 						.recipe-cont{
 							text-align: center;
 							position: absolute;
@@ -97,12 +101,13 @@
 						}
 						.can-img{
 							margin: auto;
-							display: inline-block;
-							vertical-align: top;
+
+							//display: inline-block;
+							//vertical-align: top;
 						}
 						.lower-info-cont{
 							position: absolute;
-							bottom: 0;
+							bottom: 10px;
 							left: 0;
 							width: 100%;
 							.taste-txt{
@@ -234,16 +239,10 @@
 							}
 							.can-img{
 								width: auto;
-								&.small-can{
-									margin-top: 260px;
-								}
-								&.big-can{
-									margin-top: 160px;
-								}
 							}
 							.lower-info-cont{
 								position: absolute;
-								bottom: 0;
+								bottom: -35px;
 								left: 0;
 								width: 100%;
 								height: 278px;
@@ -292,9 +291,6 @@
 		}
 		@include media-breakpoint-up(base-lg) {
 			padding-top: 100px;
-			.small-cat-and-dog{
-				width: auto;
-			}
 			.advantage-title{
 				//font-size: 42.5px;
 			}
@@ -310,7 +306,7 @@
 				}
 				.dogs-slider-swiper-cont{
 					width: 1500px; //
-					height: 580px; //
+					height: 650px; //
 					margin-top: 50px; //
 					.swiper-wrapper{
 						.swiper-slide{
@@ -361,10 +357,6 @@
 		}
 		@include media-breakpoint-up(xl) {
 			padding-top: 30px;
-			.small-cat-and-dog{
-				width: 65px;
-				height: auto;
-			}
 			.advantage-title{
 				//font-size: 32.5px;
 			}
@@ -407,7 +399,8 @@
 								}
 							}
 							.lower-info-cont{
-								height: 150px;
+								height: 140px;
+								padding: 5px;
 								.taste-txt{
 									//font-size: $em-base * 0.85;
 								}
@@ -433,10 +426,6 @@
 		}
 		@include media-breakpoint-up(lg) {
 			padding-top: 30px;
-			.small-cat-and-dog{
-				width: 65px;
-				height: auto;
-			}
 			.advantage-title{
 				//font-size: 27.5px;
 			}
@@ -479,7 +468,8 @@
 								}
 							}
 							.lower-info-cont{
-								height: 150px;
+								height: 120px;
+								//padding: 15px;
 								.taste-txt{
 									//font-size: $em-base * 0.95;
 								}
@@ -505,10 +495,6 @@
 		}
 		@include media-breakpoint-only(md) {
 			padding-top: 30px;
-			.small-cat-and-dog{
-				width: 65px;
-				height: auto;
-			}
 			.advantage-title{
 				//font-size: 27.5px;
 			}
@@ -555,7 +541,8 @@
 								}
 							}
 							.lower-info-cont{
-								height: 150px;
+								height: 125px;
+								padding: 5px;
 								.taste-txt{
 									//font-size: $em-base * 0.95;
 								}
@@ -582,10 +569,6 @@
 		}
 		@include media-breakpoint-only(sm) {
 			padding-top: 30px;
-			.small-cat-and-dog{
-				width: 55px;
-				height: auto;
-			}
 			.advantage-title{
 				//font-size: 26px;
 			}
@@ -631,7 +614,8 @@
 								}
 							}
 							.lower-info-cont{
-								height: 110px;
+								height: 100px;
+								padding: 5px;
 								.taste-txt{
 									//font-size: $em-base * 0.95;
 								}
@@ -658,10 +642,6 @@
 		}
 		@include media-breakpoint-only(xs) {
 			padding-top: 0px;
-			.small-cat-and-dog{
-				width: 55px;
-				height: auto;
-			}
 			.advantage-title{
 				//font-size: 22.7px;
 			}
@@ -700,9 +680,10 @@
 							.can-img{
 								width: 50%;
 								height: auto;
+								max-width: 180px;
 								&.small-can{
 									margin-top: 110px;
-									max-width: 200px;
+
 								}
 								&.big-can{
 									margin-top: 50px;
@@ -710,7 +691,7 @@
 								}
 							}
 							.lower-info-cont{
-								height: 110px;
+								height: 80px;
 								.taste-txt{
 									//font-size: $em-base * 0.95;
 								}

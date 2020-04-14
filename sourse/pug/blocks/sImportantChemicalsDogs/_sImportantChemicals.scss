@@ -2,6 +2,10 @@
 	// start .sContact
 	.s-importnant-chemicals {
 		padding: 0;
+		@include media-breakpoint-up(xxl){
+			margin-top: rem(326px);
+		}
+		margin-top: rem(175px);
 		.row{
 			.pet-and-text{
 				box-sizing: border-box;
@@ -96,7 +100,7 @@
 			}
 		}
 		@include media-breakpoint-up(base-lg) {
-			margin-top: 150px;
+			//margin-top: 150px;
 			//$em-base: 27px;
 			.row{
 				.pet-and-text{
@@ -139,8 +143,8 @@
 				}
 			}
 		}
-		@include media-breakpoint-up(xl) {
-			margin-top: 150px;
+		@include media-breakpoint-up(xxl) {
+			//margin-top: 150px;
 			//$em-base: 20px;
 			.row{
 				.pet-and-text{
@@ -183,8 +187,8 @@
 				}
 			}
 		}
-		@include media-breakpoint-only(lg) {
-			margin-top: 75px;
+		@include media-breakpoint-up(lg) {
+			//margin-top: 75px;
 			//$em-base: 18px;
 			.row{
 				.pet-and-text{
@@ -202,11 +206,11 @@
 						.pet-item{
 							margin-left: -13%;
 							margin-top: 20px;
-							width: 100%;
+							width: 80%;
 							height: auto;
 						}
 						.elipse{
-							left: 60%;
+							left: 49%;
 							top: 45%;
 							width: 160px;
 							height: 160px;
@@ -228,7 +232,7 @@
 			}
 		}
 		@include media-breakpoint-only(md) {
-			margin-top: 50px;
+			//margin-top: 50px;
 			//$em-base: 17px;
 			.row{
 				position: relative;
@@ -279,7 +283,7 @@
 			}
 		}
 		@include media-breakpoint-only(sm) {
-			margin-top: 50px;
+			//margin-top: 50px;
 			//$em-base: 14px;
 			.row{
 				position: relative;
@@ -330,7 +334,7 @@
 			}
 		}
 		@include media-breakpoint-only(xs) {
-			margin-top: 25px;
+			//margin-top: 25px;
 			//$em-base: 14px;
 			.row{
 				position: relative;
@@ -409,3 +413,94 @@
 	@include media-breakpoint-down(xs) {} 
 
 } // end.sContact
+
+/*
+@include media-breakpoint-up(xl) {
+			//margin-top: 150px;
+			//$em-base: 20px;
+			.row{
+				.pet-and-text{
+					padding-left: 6.7%;
+					.pet-txt-headline{
+						width: 80.5%;
+						//font-size: 32.5px;
+					}
+					.descr-par{
+						width: 78.5%;
+						//margin-top: 29px;
+						//font-size: $em-base + 0px;
+					}
+					.pet-img-container{
+						.pet-item{
+							margin-left: -13%;
+							margin-top: 20px;
+							width: 100%;
+							height: auto;
+						}
+						.elipse{
+							left: 60%;
+							top: 45%;
+							width: 200px;
+							height: 200px;
+							.inner-txt{
+								//font-size: $em-base - 1px;
+							}
+						}
+					}
+				}
+				.img-block {
+					.pet-img-square{
+						//position: relative;
+						//margin-left: -20px;
+						margin: 0;
+						width: 100%;
+						height: auto;
+					}
+				}
+			}
+		}
+		@include media-breakpoint-only(lg) {
+			//margin-top: 75px;
+			//$em-base: 18px;
+			.row{
+				.pet-and-text{
+					padding-left: 6.7%;
+					.pet-txt-headline{
+						width: 80.5%;
+						//font-size: 27.5px;
+					}
+					.descr-par{
+						width: 78.5%;
+						//margin-top: 29px;
+						//font-size: $em-base - 1px;
+					}
+					.pet-img-container{
+						.pet-item{
+							margin-left: -13%;
+							margin-top: 20px;
+							width: 100%;
+							height: auto;
+						}
+						.elipse{
+							left: 60%;
+							top: 45%;
+							width: 160px;
+							height: 160px;
+							.inner-txt{
+								//font-size: $em-base - 2px;
+							}
+						}
+					}
+				}
+				.img-block {
+					.pet-img-square{
+						//position: relative;
+						//margin-left: -20px;
+						margin: 0;
+						width: 100%;
+						height: auto;
+					}
+				}
+			}
+		}
+*/

@@ -2,11 +2,17 @@
 	// start .s-test
 	.s-advantage {
 		text-align: center;
+		padding-top: rem(200px) !important;
+		padding-bottom: 1.7rem;
+		.small-cat-and-dog{
+			@extend .section-icon;
+		}
 		.advantage-title{
 			color: $home-advantage-headline-color;
 			font-size: $main-headline-fs;
 			line-height: 1;
-			margin: 0px 0px 0px 0px;
+			//margin: 0px 0px 0px 0px;
+			padding-top: rem(20px);
 			font-weight: 900;
 		}
 		.advantages-pills-list{
@@ -14,11 +20,17 @@
 			margin-right: 0;
 			margin-left: 0;
 			font-size: 0;
+			padding-top: rem(130px);
+			margin-bottom: 0;
 			.advantages-pills-list-item{
 				text-align: center;
 				.inner-img-container{
 					display: flex;
 					margin: 0 auto;
+
+					width: rem(330px);
+					height: rem(330px);
+
 					border-radius: 50%;
 					.inner-img{
 						width: 70%;
@@ -34,6 +46,7 @@
 					font-size: $pill-description-fs;
 					font-weight: 900; //
 					position: relative;
+					margin-top: rem(25px);
 				}
 			}
 		}
@@ -42,6 +55,7 @@
 			position: relative;
 			background-color: $convince-bg-color;
 			text-align: left;
+			margin: rem(200px) 0 0 rem(100px);
 			.convince-txt-head-line{
 				font-size: $convince-txt-headline; //58.5px;
 				font-weight: 900;
@@ -53,6 +67,7 @@
 				color: $h-color; //
 				font-weight: 500;//
 				font-size: $convince-txt--par-fs;
+				line-height: rem(58.5px);
 			}
 			.convince-img{
 				background-size: cover;
@@ -60,7 +75,7 @@
 		}
 
 	@include media-breakpoint-up(base-xl) {
-		padding-top: 200px;
+		//padding-top: 200px;
 		text-align: center;
 		font-family: $default-font;
 		.small-cat-and-dog{
@@ -77,7 +92,7 @@
 		.advantages-pills-list{
 			display: block;
 			list-style: none;
-			padding-top: 129px;
+			//padding-top: 129px;
 			margin-right: 0;
 			margin-left: 0;
 			.advantages-pills-list-item{
@@ -185,31 +200,25 @@
 		}
 	}
 	@include media-breakpoint-only(base-lg) {
-		padding-top: 200px;
+		//padding-top: 200px;
 
-		.small-cat-and-dog{
-			margin-right: -32px;
-		}
 		.advantage-title{
 			//font-size: $h-font-size;//44
-			padding: 16px 0 0 40px;
+			//padding: 16px 0 0 0px;
 		}
 		.advantages-pills-list{
-			padding-top: 129px;
+			//padding-top: 129px;
 			.advantages-pills-list-item{
 				.inner-img-container{
-					width: 190px;
-					height: 190px;
+					//width: 190px;
+					//height: 190px;
 					.inner-img{
-						//max-width: 50%;
-						//margin: auto;
-						//line-height: 190px;
 					}
 				}
 				.pill-description{
 					padding: 0;
 					//font-size: $em-base;
-					margin-top: 25px;
+					//margin-top: 25px;
 				}
 			}
 		}
@@ -217,7 +226,7 @@
 			width: 1850px;
 			max-width: 82%;
 			padding-left: 60px;
-			margin: 200px 0 0 70px;
+			//margin: 200px 0 0 70px;
 			.convince-txt-head-line{
 				//font-size: 35px;
 				padding-top: 70px;
@@ -227,12 +236,12 @@
 				padding: 10px 0 80px 0;
 				//font-size: $em-base * 0.75; //20px
 				width: 58%;
-				line-height: 35px;
+				//line-height: 35px;
 			}
 			.convince-img{
 				position: absolute;
 				right: -5%;
-				top: -20%;
+				top: -10%;
 				width: 500px;
 				height: 500px;
 			}
@@ -240,22 +249,21 @@
 	}
 
 	//
-	@include media-breakpoint-up(xl) {
-		padding-top: 200px;
-		.small-cat-and-dog{
-			width: 100px;
-			height: auto;
-		}
+	@include media-breakpoint-up(xxl) {
+		//padding-top: 200px;
 		.advantage-title{
 			//font-size: $h-font-size; //34px;
-			padding: 20px 0 0 0px;
+			//padding: 20px 0 0 0px;
 		}
 		.advantages-pills-list{
-			padding-top: 80px;
+			padding-top: rem(80px);
 			.advantages-pills-list-item{
 				.inner-img-container{
-					width: 190px;
-					height: 190px;
+					//width: 150px;
+					//height: 150px;
+
+					width: rem(330px);
+					height: rem(330px);
 					.inner-img{
 						//max-width: 50%;
 						//margin: auto;
@@ -263,8 +271,9 @@
 					}
 				}
 				.pill-description{
+					font-size: $pill-description-fs;
 					//font-size: $em-base * 0.8;
-					margin-top: 25px;
+					//margin-top: 25px;
 				}
 			}
 		}
@@ -272,7 +281,8 @@
 			width: 1850px;
 			max-width: 82%;
 			padding-left: 50px;
-			margin: 100px 0 0 100px;
+			//margin: 100px 0 0 100px;
+			margin: rem(200px) 0 0 rem(100px);
 			.convince-txt-head-line{
 				padding-top: 56px;
 			}
@@ -280,87 +290,80 @@
 				margin: 0;
 				padding: 10px 0 40px 0;
 				width: 55%;
-				line-height: 35px;
+				//line-height: 35px;
 			}
 			.convince-img{
 				position: absolute;
 				right: -40px;
 				top: -40px;
-				width: 400px;
-				height: 400px;
+				width: 325px;
+				height: 325px;
 			}
 		}
 	}
 
 	@include media-breakpoint-up(lg) {
 		//$h-font-size: 1.62 * $em-base;
-		padding-top: 100px;
-		.small-cat-and-dog{
-			width: 100px;
-			height: auto;
-		}
+		//padding-top: 100px;
 		.advantage-title{
 			//font-size: $h-font-size; //28
-			padding: 20px 0 0 0px;
+			//padding: 20px 0 0 0px;
 		}
 		.advantages-pills-list{
-			padding-top: 60px;
+			//padding-top: 60px;
+			padding-top: 25px;
 			.advantages-pills-list-item{
 				.inner-img-container{
-					width: 150px;
-					height: 150px;
+					width: 120px;
+					height: 120px;
 					.inner-img{
 						//max-width: 50%;
 						//margin: auto;
-						//line-height: 150px;
 					}
 				}
 				.pill-description{
-					//font-size: $em-base; //15
-					margin-top: 25px;
+					//margin-top: 25px;
+					font-size: 0.8rem;
 				}
 			}
 		}
 		.convince-txt-container{
 			max-width: 82%;
 			padding-left: 45px;
-			margin: 100px 0 0 80px;
+			//margin: 100px 0 0 80px;
+			margin: rem(100px) 0 0 rem(100px);
 			.convince-txt-head-line{
 				//font-size: 22px;
-				padding-top: 45px;
+				padding-top: 25px;
 			}
 			.convince-txt-par{
 				margin: 0;
-				padding: 10px 0 35px 0;
+				padding: 10px 0 20px 0;
 				//font-size: 14px;
 				width: 55%;
-				line-height: 30px;
+				//line-height: 30px;
 			}
 			.convince-img{
 				position: absolute;
-				right: -34px;
+				right: -15px;
 				top: -34px;
-				width: 340px;
-				height: 340px;
+				width: 300px;
+				height: 300px;
 			}
 		}
 	}
 	@include media-breakpoint-up(md) {
-		padding-top: 80px;
-		.small-cat-and-dog{
-			width: 85px;
-			height: auto;
-		}
+		//padding-top: 80px;
 		.advantage-title{
-			padding: 15px 0 0 0px;
+			//padding: 15px 0 0 0px;
 		}
 		.advantages-pills-list{
-			padding-top: 45px;
+			//padding-top: 45px;
 			.advantages-pills-list-item{
 				padding: 0;
 				.inner-img-container{
-					width: 120px;
-					height: 120px;
+					//width: 120px;
+					//height: 120px;
 					.inner-img{
 						//max-width: 50%;
 						//margin: auto;
@@ -369,13 +372,13 @@
 				}
 				.pill-description{
 					padding: 0;
-					margin-top: 25px;
+					//margin-top: 25px;
 				}
 			}
 		}
 		.convince-txt-container{
 			padding-left: 30px;
-			margin: 80px 0 0 0;
+			//margin: 50px 0 0 0;
 			&:after{
 				content: '';
 				position: absolute;
@@ -394,35 +397,31 @@
 				padding: 5px 0 35px 0;
 				//font-size: 13.5px;
 				width: 55%;
-				line-height: 24px;
+				//line-height: 24px;
 			}
 			.convince-img{
 				position: absolute;
 				z-index: 2;
 				right: 0px;
 				top: -34px;
-				width: 280px;
-				height: 280px;
+				width: 250px;
+				height: 250px;
 			}
 		}
 	}
 	@include media-breakpoint-only(sm) {
-		padding-top: 80px;
-		.small-cat-and-dog{
-			width: 85px;
-			height: auto;
-		}
+		//padding-top: 80px;
 		.advantage-title{
 			//font-size: $h-font-size; //25
-			padding: 15px 0 0 0px;
+			//padding: 15px 0 0 0px;
 		}
 		.advantages-pills-list{
-			padding-top: 45px;
+			//padding-top: 45px;
 			.advantages-pills-list-item{
 				padding: 0;
 				.inner-img-container{
-					width: 120px;
-					height: 120px;
+					//width: 120px;
+					//height: 120px;
 					.inner-img{
 						//max-width: 50%;
 						//margin: auto;
@@ -431,13 +430,14 @@
 				}
 				.pill-description{
 					//font-size: $em-base; //11
-					margin-top: 25px;
+					//margin-top: 25px;
 				}
 			}
 		}
 		.convince-txt-container{
 			padding-left: 30px;
-			margin: 80px 0 0 0;
+			margin-bottom: rem(50px);
+			//margin: 50px 0 0 0;
 			&:after{
 				content: '';
 				position: absolute;
@@ -456,13 +456,13 @@
 				padding: 5px 40px 0 0;
 				//font-size: 13.5px;
 				width: 100%;
-				line-height: 24px;
+				//line-height: 24px;
 			}
 			.convince-img{
 				position: relative;
 				z-index: 2;
 				//margin-left: auto;
-				bottom: -34px;
+				bottom: -25px;
 				left: 0px;
 				width: 280px;
 				height: 280px;
@@ -471,22 +471,18 @@
 	}
 
 	@include media-breakpoint-only(xs) {
-		padding-top: 80px;
-		.small-cat-and-dog{
-			width: 85px;
-			height: auto;
-		}
+		//padding-top: 80px;
 		.advantage-title{
 			//font-size: $h-font-size; //20
-			padding: 15px 0 0 0px;
+			//padding: 15px 0 0 0px;
 		}
 		.advantages-pills-list{
-			padding-top: 45px;
+			//padding-top: 45px;
 			.advantages-pills-list-item{
 				padding: 0;
 				.inner-img-container{
-					width: 120px;
-					height: 120px;
+					//width: 120px;
+					//height: 120px;
 					.inner-img{
 						//max-width: 50%;
 						//margin: auto;
@@ -495,14 +491,15 @@
 				}
 				.pill-description{
 					//font-size: $em-base; //11
-					margin-top: 25px;
+					//margin-top: 25px;
 				}
 			}
 		}
 		.convince-txt-container{
-			margin-top: 80px;
+			margin-top: 50px;
 			margin-right: -15px;
 			margin-left: -15px;
+			margin-bottom: rem(50px);
 			.convince-txt-head-line{
 				//font-size: 22px;
 				padding-top: 20px;
@@ -513,7 +510,7 @@
 				padding: 5px 20px 20px 20px;
 				//font-size: 13.5px;
 				width: 100%;
-				line-height: 24px;
+				//line-height: 24px;
 			}
 			.convince-img{
 				position: relative;
@@ -551,3 +548,55 @@
 	@include media-breakpoint-down(xs) {} 
 
 } // end.s-test
+
+	/*
+		@include media-breakpoint-up(lg) {
+		//$h-font-size: 1.62 * $em-base;
+		//padding-top: 100px;
+		.advantage-title{
+			//font-size: $h-font-size; //28
+			//padding: 20px 0 0 0px;
+		}
+		.advantages-pills-list{
+			//padding-top: 60px;
+			.advantages-pills-list-item{
+				.inner-img-container{
+					//width: 120px;
+					//height: 120px;
+					.inner-img{
+						//max-width: 50%;
+						//margin: auto;
+						//line-height: 150px;
+					}
+				}
+				.pill-description{
+					//font-size: $em-base; //15
+					//margin-top: 25px;
+				}
+			}
+		}
+		.convince-txt-container{
+			max-width: 82%;
+			padding-left: 45px;
+			//margin: 100px 0 0 80px;
+			.convince-txt-head-line{
+				//font-size: 22px;
+				padding-top: 45px;
+			}
+			.convince-txt-par{
+				margin: 0;
+				padding: 10px 0 35px 0;
+				//font-size: 14px;
+				width: 55%;
+				//line-height: 30px;
+			}
+			.convince-img{
+				position: absolute;
+				right: -15px;
+				top: -34px;
+				width: 300px;
+				height: 300px;
+			}
+		}
+	}
+	*/

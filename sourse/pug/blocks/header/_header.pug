@@ -5,7 +5,7 @@ mixin header()
 		header.home-header
 			.container
 				.row
-					.col-auto.logo-col
+					.col-lg-auto.col
 						a(href="#").logo-link
 							img(src='img/@2x/logo.png')
 					.col.d-none.d-lg-block
@@ -18,7 +18,7 @@ mixin header()
 									a.ancor-js(href='#s-perfect-formula') Идеальная формула
 								li
 									a.ancor-js(href='.footer') Контакты
-					.col-auto.d-lg-none.menu-col
+					.col-auto.d-lg-none
 						+b.toggle-menu-mobile--js.d-lg-none
 							span
 		.container
